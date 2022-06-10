@@ -1,9 +1,11 @@
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 import scipy.special as sp
 import logging
 logging.basicConfig(level='DEBUG', format=' %(asctime)s - %(levelname)s -'\
     ' %(message)s')
+logging.getLogger('matplotlib.font_manager').disabled = True
 
 
 logging.debug('Start of Program')
@@ -55,7 +57,6 @@ on event 'E'."""
     # User input for the 'k'        
     flag = True
     while flag:
-        
         
         
         num_successes_input = input(f'How many successes in our random draw'\
@@ -140,7 +141,9 @@ def binom_deck(series, n, k, E):
 in 'n' Bernoulli trials of an experiment with probability of success 'p'.
 Our value 'x' will follow a discrete, binomial random variable 'X', with
 parameters 'n' and 'p', the distribution for which will be computed here
-in this function."""
+in this function. Additionally, shading on that distribution will be done
+to represent the cumulative area along the distribution corresponding to
+the number of successes chosen by the user."""
     
     
     # We need to randomly draw 'n' cards from the deck 'series'
@@ -158,7 +161,62 @@ in this function."""
     
     
     # We need to create the list of probabilities along this distribution
+    # The function will return the sum of these probabilities from index 0
+    # up to and including the index corresponding to the number of successes
+    # chosen by the user. This will represent out cumulative probability
+    # of success along a theoretical distribution.
     probabilities = [sp.comb(n, i)*p**(i)*(1-p)**(n-i) for i in range(n+1)]
+    
+    
+    # We build a simulated distribution for this random variable
+    # 1) The first block of code below draws 'n' cards from the deck and counts
+    # how many members from our event 'E' belong to the draw. The number
+    # corresponding to that count represents the number of successes in a
+    # single experiment of 'n' Bernoulli trials.
+    # 2) The second block of code below populates a list of our counts, across
+    # 10000 experiments
+    def binom_histo(series, E, n):
+        """This function will draw 'n' cards from the deck, with replacement,
+    and return a tally of the number of successes on event 'E' observed in the
+    draw"""
+        count = 0
+        drawing = np.random.choice(series, n, replace=True)
+        for x in drawing:
+            if x in E:
+                count += 1
+        return count
+    
+    
+    counts = []
+    for i in range(10**4):
+        result = binom_histo(series, E, n)
+        counts.append(result)
+        
+        
+    # We plot our simulated distributon in a histogram, shading the area
+    # representing the cumulative probability of obtaining the number of
+    # successes input by the user
+    x_values = list(range(n+2))
+    fig, ax = plt.subplots(figsize=(15, 10))
+    
+    
+    # The variable 'patches' will be used to designate which bars along the
+    # histogram we wish to shade
+    n, bins, patches = ax.hist(counts, bins=x_values, ec='k')
+    
+    
+    # All the bars we wish to shade will be designated and shaded with the
+    # following two lines of code
+    for i in range(k+1):
+        patches[i].set_fc('red')
+     
+    
+    # We complete the graph with a legend and vertical line representing the
+    # point along the x-axis at which we will cease to sum probabilities
+    # along the simulated distribution
+    ax.axvline(k+1, c='m', label=f'P(x $\leq$ {k})')
+    plt.legend(prop={'size': 20})
+    plt.show()
     
     
     # This computes and returns the cumulative probability for our chosen
