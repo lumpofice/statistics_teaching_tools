@@ -1,1 +1,0 @@
-This is a multiple choice GUI. Bars written by either Jay-Z or someone else will be randomly selected and appear. Answer option buttons of "Jay-Z" and "Not Jay-Z" will appear below the bar. If the user answers correctly, "Correct" will appear in the GUI window. If the user chooses incorrectly, "Incorrect" will appear in the GUI window. 
