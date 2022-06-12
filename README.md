@@ -10,3 +10,10 @@
 
 ## <b>games</b>
 1. greedy_pig.py
+	1. A game in which users gamble whether or not to roll the die again, collecting points so long as the face value of the die is different from 1. Soon as the face value is 1, all points earned in the round are lost.
+
+<br/>
+
+## <b>dice</b>
+1. greedy_pig_distribution.py
+	1. A program that models the geometric random variable, X, followed by the toss of a die in a game of Greedy Pig.
