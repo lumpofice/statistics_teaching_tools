@@ -20,13 +20,13 @@ def greedy_pig_roll_count(roll=1):
     count = 0
     
     
-    
     flag = True
     while flag:
         
         
         # We roll the die and determine whether or not its
-        # face value is a 1, counting every roll along the way
+        # face value is a 1, counting the tally of rolls along 
+        # the way
         face = np.random.choice(faces, roll)
         if face == 1:
             count += 1
@@ -58,8 +58,9 @@ flag = True
 while flag:
     
     
-    
-    games_input = input('How many games? ')
+    # How many games of greedy pig?
+    games_input = input('How many games?'\
+        ' Or press return to exit: ')
     
     
     # If users wish not to continue
@@ -72,27 +73,24 @@ while flag:
     # If users wish to continue
     try:
         games = int(games_input)
+        if games < 1:
+            logging.debug('Must enter a positive integer.')
+        
+        
         # We take our user input, in the 'games' variable, and
         # use it to construct our distribution
         rolls_per_game = greedy_pig_distribution(games)
 
-
-        # We create a pandas series with our list of counts from
-        # the greedy_pig_distribution function
-        rolls_per_game_series = pd.Series(rolls_per_game)
-
-
-        # We get the count on each distinct count and sort those values
-        sorted_rolls_per_game_series = rolls_per_game_series.value_counts().sort_index()
-
-
+        
         # Finally, we construct the plot of the distribution
-        sorted_rolls_per_game_series.plot(kind='bar', figsize=(15, 10))
+        y = list(range(1, max(rolls_per_game)+2))
+        fig, ax = plt.subplots(figsize=(15, 10))
+        ax.hist(rolls_per_game, y, ec='k')
         plt.xlabel('Rolls per Game', fontsize=20)
         plt.ylabel('Count of Rolls per Game', fontsize=20)
         plt.xticks(fontsize=20)
         plt.yticks(fontsize=20)
-        plt.suptitle('Greed Pig Distribution', fontsize=20)
+        fig.suptitle('Greed Pig Distribution', fontsize=20)
         plt.show()
         
         
@@ -104,5 +102,3 @@ while flag:
     except ValueError:
         logging.debug('Must be a positive integer')
         continue
-        
-

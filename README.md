@@ -17,3 +17,5 @@
 ## <b>dice</b>
 1. greedy_pig_distribution.py
 	1. A program that models the geometric random variable, X, followed by the toss of a die in a game of Greedy Pig.
+2. rolling_x_dice.py
+	1. A program that models the binomial random variable, X, followed by the toss of x die (x being determined by the user) 100,000 times.
