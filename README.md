@@ -19,3 +19,9 @@
 	1. A program that models the geometric random variable, X, followed by the toss of a die in a game of Greedy Pig.
 2. rolling_x_dice.py
 	1. A program that models the binomial random variable, X, followed by the toss of x die (x being determined by the user) 100,000 times.
+
+<br/>
+
+## <b>discrete_rv</b>
+1. binomial_defectives.py
+	1. A program that simulates what happens when a binomial random variable models the chance of observing 'n' defectives, with probability of defective being 'p', in 'N' samples. All variables are chosen by the user. The program will also compare the simulated distribution with the theoretical distribution.
