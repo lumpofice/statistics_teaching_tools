@@ -6,19 +6,27 @@ import numpy as np
 import logging
 logging.basicConfig(level='DEBUG', format=' %(asctime)s - %(levelname)s'\
     ' - %(message)s')
-logging.getLogger('matplotlib.fontmanager').disabled = True
+logging.getLogger('matplotlib.font_manager').disabled = True
 
 
 logging.debug('Start of Program')
 
 
+import matplotlib.pyplot as plt
+from matplotlib.patches import Polygon
+import pandas as pd
+import scipy.stats as stats
+import numpy as np
+import logging
+logging.basicConfig(level='DEBUG', format=' %(asctime)s - %(levelname)s'\
+    ' - %(message)s')
+logging.getLogger('matplotlib.fontmanager').disabled = True
+
+
+logging.debug('hello')
+
+
 def binomial_to_p_hat():
-    """This function will generate, using parameters taken from user input,
-theoretical binomial and theoretical normal distributions, a simulated
-sample distribution constructed with a sample size of 1 million specimen
-from the respective theoretical distribution, and a sampling distribution
-for the p-hat estimator, constructed from the theoretical binomial
-distribution."""
     
     
     # User input for sample size n
@@ -142,7 +150,7 @@ distribution."""
     # Theoretical Binomial Distribution
     X = stats.binom(n, p)
     X_domain = np.arange(0, n+1)
-    X_rv = X.pmf(domain)
+    X_rv = X.pmf(X_domain)
     
 
     # Taking 1 million samples from the Theoretical Binomial 
@@ -194,6 +202,99 @@ distribution."""
     # This will serve as our probability of success in the 
     # distribution of p-hats we construct.
     p_avg = ((X_samples>=lower) & (X_samples<=upper)).sum()/(10**6)
+
+    
+    # Now we construct our p-hat distribution
+    
+    
+    # User input for sample size, m, to be pulled from the binomial
+    # distribution followed by random variable X above
+    flag = True
+    while flag:
+        
+        
+        m_input = input('Choose your sample size. Value must be a'\
+            ' positive integer. Or press return to exit: ')
+        
+        
+        if not m_input:
+            return 'Goodbye'
+        
+        
+        try:
+            m = int(m_input)
+            if m < 1:
+                logging.debug('Sample size must be a positive integer.')
+                continue
+            flag = False
+            continue
+        except ValueError:
+            logging.debug('Sample size must be a positive integer.')
+            continue
+            
+            
+    # User input for number of samples N
+    flag = True
+    while flag:
+        
+        
+        N_input = input('Choose the number of samples. Value must be a'\
+            ' positive integer. Or press return to exit: ')
+        
+        
+        if not N_input:
+            return 'Goodbye'
+        
+        
+        try:
+            N = int(N_input)
+            if N < 1:
+                logging.debug('Number of samples must be a positive integer.')
+                continue
+            flag = False
+            continue
+        except ValueError:
+            logging.debug('Number of samples must be a positive integer.')
+            continue
+            
+    
+    # The list of N p-hats resulting from N experiments, each of 
+    # size m
+    p_hats = np.empty(shape=(1, N))
+    for i in range(N):
+        sample = X.rvs(m)
+        successes = []
+        for j in sample:
+            if j >= lower and j <= upper:
+                successes.append(j)
+        p_hats[0][i] = len(successes)/m
+    
+    
+    # Constructing the histogram and normal distribution
+    mean_p_hat = p_avg
+    std_p_hat = np.sqrt(p_avg*(1-p_avg)/m)
+    increment = (p_hats.max() - p_hats.min())/10
+    low_bins = p_hats.min()
+    upp_bins = p_hats.max() + increment
+    bins = np.arange(low_bins, upp_bins, increment)
+    print('\n')
+    print(p_hats)
+    print('\n')
+    print(p_hats.max())
+    print('\n')
+    print(p_hats.min())
+    print('\n')
+    print('done')
+    #bin_num = int(np.ceil(m/10))
+    #print(bin_num)
+    fig, ax = plt.subplots(figsize=(15, 10))
+    ax.hist(p_hats[0], bins=bins.tolist(), ec='k', density=True)
+    Y = stats.norm(mean_p_hat, std_p_hat)
+    u = np.linspace(p_hats.min(), p_hats.max(), 1000)
+    ax.plot(u, Y.pdf(u))
+    plt.show()
+    
     
     
 binomial_to_p_hat()
+
