@@ -11,21 +11,6 @@ logging.getLogger('matplotlib.font_manager').disabled = True
 
 logging.debug('Start of Program')
 
-
-import matplotlib.pyplot as plt
-from matplotlib.patches import Polygon
-import pandas as pd
-import scipy.stats as stats
-import numpy as np
-import logging
-logging.basicConfig(level='DEBUG', format=' %(asctime)s - %(levelname)s'\
-    ' - %(message)s')
-logging.getLogger('matplotlib.fontmanager').disabled = True
-
-
-logging.debug('hello')
-
-
 def binomial_to_p_hat():
     
     
@@ -35,7 +20,8 @@ def binomial_to_p_hat():
         
         
         n_input = input('Choose your sample size. Value must be a'\
-            ' positive integer. Or press return to exit: ')
+            ' positive integer of at most 1000.'\
+            ' Or press return to exit: ')
         
         
         if not n_input:
@@ -45,12 +31,14 @@ def binomial_to_p_hat():
         try:
             n = int(n_input)
             if n < 1:
-                logging.debug('Sample size must be a positive integer.')
+                logging.debug('Sample size must be a positive integer'\
+                    ' of at most one thousand.')
                 continue
             flag = False
             continue
         except ValueError:
-            logging.debug('Sample size must be a positive integer.')
+            logging.debug('Sample size must be a positive integer'\
+                    ' of at most 1000.')
             continue
             
             
@@ -83,20 +71,23 @@ def binomial_to_p_hat():
     # Display theoretical mean and standard deviation of the 
     # probability distribution with parameters 'n' and 'p'
     print('\n\n')
-    print(f'The mean: {n*p}')
+    print(f'The mean of this theoretical binomial distribution: {n*p}')
     print('\n')
-    print(f'The standard deviation: {np.sqrt(n*p*(1-p))}')
+    print(f'The standard deviation of this theoretical'\
+        f' binomial distribution: {np.sqrt(n*p*(1-p))}')
     print('\n\n')
     
     
-    # User input for lower bound for area under the curve
+    # User input for lower bound for area under the normal curve
     flag = True
     while flag:
         
         
         lower_input = input('Choose your lower bound for'\
-            ' area under the curve. Value must be and integer'\
-            f' in the interval [0, {n}].'\
+            ' the area under the curve of the normal distribution'
+            f' N({n*p}, {np.sqrt(n*p*(1-p))}).'\
+            ' Value must be an integer'\
+            f' in the interval [-10, 1010].'\
             ' Or press return to exit: ')
         
         
@@ -106,24 +97,28 @@ def binomial_to_p_hat():
         
         try:
             lower = int(lower_input)
-            if lower < 0 or lower > n:
-                logging.debug('Value must be and integer in [0, {n}].')
+            if lower < -10 or lower > 1010:
+                logging.debug('Value must be an integer in'\
+                    ' [-10, 1010].')
                 continue
             flag = False
             continue
         except ValueError:
-            logging.debug('Value must be an integer in [0, {n}].')
+            logging.debug('Value must be an integer in'\
+                    ' [-10, 1010].')
             continue
             
             
-    # User input for upper bound for area under the curve
+    # User input for upper bound for area under the normal curve
     flag = True
     while flag:
         
         
         upper_input = input('Choose your upper bound for'\
-            ' area under the curve. Value must be an integer'\
-            f' in the interval [{lower}, {n}].'\
+            ' area under the curve of the normal distribution'
+            f' N({n*p}, {np.sqrt(n*p*(1-p))}).'\
+            ' Value must be an integer'\
+            f' in the interval [{lower}, 1010].'\
             ' Or press return to exit: ')
         
         
@@ -133,62 +128,83 @@ def binomial_to_p_hat():
         
         try:
             upper = int(upper_input)
-            if upper < lower or upper > n:
+            if upper < lower or upper > 1010:
                 logging.debug('Value must be an integer in'\
-                    ' [{lower}, {n}].')
+                    ' [{lower}, 1010].')
                 continue
             flag = False
             continue
         except ValueError:
-            logging.debug('Value must be an integer in [{lower}, {n}].')
+            logging.debug('Value must be an integer in [{lower}, 1010].')
             continue
             
             
     print('\n\n')
             
+        
+    # We construct our Simulated-Theoretical Binomial Distribution
+        
             
-    # Theoretical Binomial Distribution
+    # Theoretical Binomial Distribution: X
+    # Domain: X_domain
     X = stats.binom(n, p)
     X_domain = np.arange(0, n+1)
-    X_rv = X.pmf(X_domain)
     
 
     # Taking 1 million samples from the Theoretical Binomial 
     # Distribution of 'n' trials of a chance outcome with 
-    # probability of success 'p'.
+    # probability of success 'p' and using that to construct
+    # a sample distribition, which will serve as our 
+    # simulated-theoretical distribution
+    # 1 million samples from the distribution: X_samples
     X_samples = X.rvs(10**6)
     print(X_samples)
     print(f'Probability for the binomial outcome in interval'\
         f' [{lower}, {upper}]:'\
         f' {((X_samples>=lower) & (X_samples<=upper)).sum()/(10**6)}\n')
     
+    
+    # We construct our Theoretical Normal Distribution
+    
 
     # Theoretical Normal Distribution having mean and standard deviation
-    # equal to their respective counterparts in the theoretical
-    # binomial distribution
+    # equal to 'n*p' and 'sqrt(n*p*(1-p))', respectively. These are the
+    # mean and standard deviation, respectively, of the Theoretical 
+    # Binomial Distribution
+    # Normal Distribution: Y
+    # Domain: Y_domain 
+    # Range: pdf_values(X, x)
     Y = stats.norm(X.mean(), X.std())
-    Y_domain = np.linspace(0, n, 1000)
+    Y_domain = np.linspace(-10, 1010, 10000)
     def pdf_values(X, x):
         return X.pdf(x)
     Y_rv = pdf_values(Y, Y_domain)
 
 
     # Taking 1 million samples from the Theoretical Normal 
-    # Distribution mean and standard deviation
-    # equal to their respective counterparts in the theoretical
-    # binomial distribution
+    # Distribution
     Y_samples = Y.rvs(10**6)
     print(f'Probability for the normal outcome in interval'\
         f' ({lower}, {upper}):'\
         f' {((Y_samples>lower) & (Y_samples<upper)).sum()/(10**6)}\n')
 
     
-    # Plotting
+    # Plotting the graph of both the Simulated Binomial
+    # Distribution, overlaid with the Theoretical Normal Distribution,
+    # shaded between the lower and upper bounds input by the user
+    # Histogram of the Binomial:
     bins = list(range(n+1))
     fig, ax = plt.subplots(figsize=(15, 10))
     ax.hist(X_samples, bins=bins, ec='k', alpha=0.3, density=True)
+    
+    
+    # Plot of the Normal:
     ax.plot(Y_domain, Y_rv)
     plt.ylim(0, Y_rv.max()+(Y_rv.max()/10**2))
+    plt.xlim(X.mean()-(5*X.std()), X.mean()+(5*X.std()))
+    
+    
+    # Shading of the plotted Normal:
     ix = np.linspace(lower, upper, 1000)
     iy = pdf_values(Y, ix)
     verts = [(lower, 0), *zip(ix, iy), (upper, 0)]
@@ -202,19 +218,27 @@ def binomial_to_p_hat():
     # This will serve as our probability of success in the 
     # distribution of p-hats we construct.
     p_avg = ((X_samples>=lower) & (X_samples<=upper)).sum()/(10**6)
+    
+    
+    if p_avg > 0.99:
+        return 'We have a near certainty for success.'
+    if p_avg < 0.01:
+        return 'We have a near certainty for failure.'
 
     
     # Now we construct our p-hat distribution
     
     
-    # User input for sample size, m, to be pulled from the binomial
-    # distribution followed by random variable X above
+    # User input for sample size, m, to be pulled from the 
+    # Simulated-Theoretical Binomial Distribution followed 
+    # by random variable X above
     flag = True
     while flag:
         
         
         m_input = input('Choose your sample size. Value must be a'\
-            ' positive integer. Or press return to exit: ')
+            ' positive integer of at most 1000.'\
+            ' Or press return to exit: ')
         
         
         if not m_input:
@@ -224,12 +248,14 @@ def binomial_to_p_hat():
         try:
             m = int(m_input)
             if m < 1:
-                logging.debug('Sample size must be a positive integer.')
+                logging.debug('Sample size must be a positive integer'\
+                    ' of at most 1000.')
                 continue
             flag = False
             continue
         except ValueError:
-            logging.debug('Sample size must be a positive integer.')
+            llogging.debug('Sample size must be a positive integer'\
+                    ' of at most 1000.')
             continue
             
             
@@ -239,7 +265,7 @@ def binomial_to_p_hat():
         
         
         N_input = input('Choose the number of samples. Value must be a'\
-            ' positive integer. Or press return to exit: ')
+            ' positive integer of at most 10000. Or press return to exit: ')
         
         
         if not N_input:
@@ -249,17 +275,21 @@ def binomial_to_p_hat():
         try:
             N = int(N_input)
             if N < 1:
-                logging.debug('Number of samples must be a positive integer.')
+                logging.debug('Number of samples must be a positive integer'\
+                ' of at most 10000.')
                 continue
             flag = False
             continue
         except ValueError:
-            logging.debug('Number of samples must be a positive integer.')
+            logging.debug('Number of samples must be a positive integer'\
+                ' of at most 10000.')
             continue
             
     
     # The list of N p-hats resulting from N experiments, each of 
-    # size m
+    # size m.
+    # A success is any outcome in a sample that lies between
+    # the lower and upper bounds input by the user
     p_hats = np.empty(shape=(1, N))
     for i in range(N):
         sample = X.rvs(m)
@@ -270,31 +300,41 @@ def binomial_to_p_hat():
         p_hats[0][i] = len(successes)/m
     
     
-    # Constructing the histogram and normal distribution
+    # Constructing the histogram of the p-hat distribution and 
+    # overlaying it with a Theoretical Normal Distribution
+    # N(mean_p_hat, std_p_hat)
     mean_p_hat = p_avg
     std_p_hat = np.sqrt(p_avg*(1-p_avg)/m)
+    
+    
+    # We will need an increment as we move from the minimum to the maximum
+    # value in the array of p_hats generated above
     increment = (p_hats.max() - p_hats.min())/10
+    
+    
+    # We need to set the minimum and maximum values for the bins argument
+    # in our histogram
     low_bins = p_hats.min()
     upp_bins = p_hats.max() + increment
+    
+    
+    # Here are the bins for our histogram
     bins = np.arange(low_bins, upp_bins, increment)
-    print('\n')
-    print(p_hats)
-    print('\n')
-    print(p_hats.max())
-    print('\n')
-    print(p_hats.min())
-    print('\n')
-    print('done')
-    #bin_num = int(np.ceil(m/10))
-    #print(bin_num)
+    
+    
+    # Plotting the graph of our histogram for the p-hat distribution
     fig, ax = plt.subplots(figsize=(15, 10))
     ax.hist(p_hats[0], bins=bins.tolist(), ec='k', density=True)
-    Y = stats.norm(mean_p_hat, std_p_hat)
-    u = np.linspace(p_hats.min(), p_hats.max(), 1000)
-    ax.plot(u, Y.pdf(u))
+    
+    
+    # Plotting the graph of the Theoretical Normail Distribution
+    # N(mean_p_hat, std_p_hat)
+    Z = stats.norm(mean_p_hat, std_p_hat)
+    Z_domain = np.linspace(-1, 2, 10000)
+    Z_rv = Z.pdf(Z_domain)
+    ax.plot(Z_domain, Z_rv)
+    plt.xlim(mean_p_hat-(5*std_p_hat), mean_p_hat+(5*std_p_hat))
     plt.show()
     
     
-    
 binomial_to_p_hat()
-
