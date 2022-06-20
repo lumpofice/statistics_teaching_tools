@@ -1,6 +1,5 @@
 import matplotlib.pyplot as plt
 from matplotlib.patches import Polygon
-import pandas as pd
 import scipy.stats as stats
 import numpy as np
 import logging
@@ -11,7 +10,18 @@ logging.getLogger('matplotlib.font_manager').disabled = True
 
 logging.debug('Start of Program')
 
+
 def binomial_to_p_hat():
+    """This program constructs a Simulated Binomial Distribution with parameters
+b(n, p) and visually compares it with the Theoretical Normal Distrbution
+N(np, np(1-p)),computing the area between lower and upper bounds, input
+by the user, for both distributions.
+Afterwards, the program uses the Simulated Binomial
+Distribution, along with further user input, to construct a Sampling
+Distribution of the p-hat Estimator, which has a theoretical mean of
+p_avg and theoretical standard deviation of sqrt(p_avg*(1-p_avg)/m), and
+compares that with the Theoretical Normal Distribution
+N(p_avg, sqrt(p_avg*(1-p_avg)/m))"""
     
     
     # User input for sample size n
@@ -158,7 +168,6 @@ def binomial_to_p_hat():
     # simulated-theoretical distribution
     # 1 million samples from the distribution: X_samples
     X_samples = X.rvs(10**6)
-    print(X_samples)
     print(f'Probability for the binomial outcome in interval'\
         f' [{lower}, {upper}]:'\
         f' {((X_samples>=lower) & (X_samples<=upper)).sum()/(10**6)}\n')
@@ -195,11 +204,14 @@ def binomial_to_p_hat():
     # Histogram of the Binomial:
     bins = list(range(n+1))
     fig, ax = plt.subplots(figsize=(15, 10))
-    ax.hist(X_samples, bins=bins, ec='k', alpha=0.3, density=True)
+    ax.hist(X_samples, bins=bins, ec='k', alpha=0.3, density=True,\
+        label=f'Simulated Binomial Distribution b({n}, {p})')
     
     
     # Plot of the Normal:
-    ax.plot(Y_domain, Y_rv)
+    ax.plot(Y_domain, Y_rv,\
+        label=f'Normal Distribution N({np.round(X.mean(), 2)},'\
+        f' {np.round(X.std(), 2)}))')
     plt.ylim(0, Y_rv.max()+(Y_rv.max()/10**2))
     plt.xlim(X.mean()-(5*X.std()), X.mean()+(5*X.std()))
     
@@ -210,6 +222,13 @@ def binomial_to_p_hat():
     verts = [(lower, 0), *zip(ix, iy), (upper, 0)]
     poly = Polygon(verts, facecolor='0.15', edgecolor='0', alpha=0.7)
     ax.add_patch(poly)
+    plt.xlabel('Number of Successes', fontsize=20)
+    plt.ylabel('Frequency', fontsize=20)
+    plt.xticks(fontsize=20)
+    plt.yticks(fontsize=20)
+    fig.suptitle(f'Comparing b({n}, {p}) with N({np.round(X.mean(), 2)},'\
+        f' {np.round(X.std(), 2)})', fontsize=20)
+    plt.legend(prop={'size': 10})
     plt.show()
     
     
@@ -324,7 +343,8 @@ def binomial_to_p_hat():
     
     # Plotting the graph of our histogram for the p-hat distribution
     fig, ax = plt.subplots(figsize=(15, 10))
-    ax.hist(p_hats[0], bins=bins.tolist(), ec='k', density=True)
+    ax.hist(p_hats[0], bins=bins.tolist(), ec='k', density=True, \
+    label='Sampling Distribution of p-hat')
     
     
     # Plotting the graph of the Theoretical Normail Distribution
@@ -332,8 +352,16 @@ def binomial_to_p_hat():
     Z = stats.norm(mean_p_hat, std_p_hat)
     Z_domain = np.linspace(-1, 2, 10000)
     Z_rv = Z.pdf(Z_domain)
-    ax.plot(Z_domain, Z_rv)
+    ax.plot(Z_domain, Z_rv, label=f'N({np.round(mean_p_hat, 2)},'\
+        f' {np.round(std_p_hat, 2)})')
     plt.xlim(mean_p_hat-(5*std_p_hat), mean_p_hat+(5*std_p_hat))
+    plt.xlabel('p-hat Sample Statistics', fontsize=20)
+    plt.ylabel('Frequency', fontsize=20)
+    plt.xticks(fontsize=20)
+    plt.yticks(fontsize=20)
+    fig.suptitle(f'Comparing Sampling Distribution of p-hat with'\
+        f' N({np.round(mean_p_hat, 2)}, {np.round(std_p_hat, 2)})', fontsize=20)
+    plt.legend(prop={'size': 10})
     plt.show()
     
     
