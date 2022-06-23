@@ -29,5 +29,5 @@
 <br/>
 
 ## <b>distributions</b>
-1. p_hat.py
+1. p_hat_from_simulated_binom.py
 	1. This program compares binomial and p-hat sampling distributions with their theoretical normal counterparts.
