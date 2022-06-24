@@ -59,8 +59,8 @@ while flag:
     
     
     # How many games of greedy pig?
-    games_input = input('How many games?'\
-        ' Or press return to exit: ')
+    games_input = input('How many games? Choose a positive integer less than'\
+        ' or equal to 10000. Or press return to exit: ')
     
     
     # If users wish not to continue
@@ -73,8 +73,9 @@ while flag:
     # If users wish to continue
     try:
         games = int(games_input)
-        if games < 1:
-            logging.debug('Must enter a positive integer.')
+        if games < 1 or games > 10000:
+            logging.debug('Must enter a positive integer less than'\
+                ' or equal to 10000.')
         
         
         # We take our user input, in the 'games' variable, and
@@ -100,5 +101,6 @@ while flag:
         
     # If users fail to input an integer    
     except ValueError:
-        logging.debug('Must be a positive integer')
+        logging.debug('Must be a positive integer less than'\
+            ' or equal to 10000.')
         continue
