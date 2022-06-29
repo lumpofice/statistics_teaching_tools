@@ -19,6 +19,11 @@ display(players_last_name_d.loc[:16]['Player'])
 print('\n')
 
 
+# Sending players_last_name_d.loc[:16]['Player'] data table to a .tex file
+with open('players_last_name_d_nominal.tex', 'w') as file:
+    file.write(players_last_name_d.loc[:16]['Player'].to_latex())
+
+
 # Resetting the index to 'Player'
 players_last_name_d = players_last_name_d.set_index('Player')
 
@@ -29,6 +34,17 @@ players_last_name_d = players_last_name_d.set_index('Player')
 display(players_last_name_d.loc[:'Chick Halbert',\
     ['From', 'Wt']].sort_values('From'))
 print('\n')
+
+
+# Sending
+# players_last_name_d.loc[:'Chick Halbert',\
+#    ['From', 'Wt']].sort_values('From')
+# data table to a .tex file
+with open('players_last_name_d_nominal_interval_ratio.tex', 'w') as file:
+    file.write(
+        players_last_name_d.loc[:'Chick Halbert',\
+        ['From', 'Wt']].sort_values('From').to_latex()
+        )
 
 
 # We populate the raw data of players ranked by total points for the
@@ -51,3 +67,8 @@ players_points_rankings.drop(columns=\
 # Display the top 20 ranked players in this table. This table will serve to
 # display the difference between ordinal, nominal, and ratio data-types
 display(players_points_rankings.loc[1:20])
+
+
+# Sending players_points_rankings.loc[1:20] data table to a .tex file
+with open('players_points_rankings_nominal_ordinal_ratio.tex', 'w') as file:
+    file.write(players_points_rankings.loc[1:20].to_latex())
