@@ -30,6 +30,10 @@
 \newenvironment{recall}[1][]{\refstepcounter{recall}\par\medskip
    \noindent \textbf{Recall~\therecall. #1} \rmfamily}{\medskip}
    
+\newcounter{dataset}[section]
+\newenvironment{dataset}[1][]{\refstepcounter{dataset}\par\medskip
+   \noindent \textbf{Data Set~\thedataset. #1} \rmfamily}{\medskip}
+   
 \setlength{\parindent}{0pt}
 
 \begin{document}
