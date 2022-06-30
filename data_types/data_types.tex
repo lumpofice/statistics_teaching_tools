@@ -2,32 +2,61 @@
 
 Data can fall into $4$ different types:
 \begin{itemize}
-    \item Nominal
-    \item Ordinal
-    \item Interval
-    \item Ratio
+    \item Nominal: Data, in name only.
+    \item Ordinal: Data, in rank/position only.
+    \item Interval: Data on which mathematical differences can be computed.
+    \item Ratio: Data on which all mathematical computations are possible.
 \end{itemize}
 across two different categories:
 \begin{itemize}
-    \item Qualitative
-    \item Quantitative
+    \item Qualitative: Data that bears a qualitative characteristic
+    \item Quantitative: Data that can be measured.
 \end{itemize}
+
 Qualitative data indicate the presence of a characteristic. The specimen in question either does or does not have the characteristic. 
+
 \begin{example}
 The specimen in question, say a person, either does or does not have brown eyes.
 \end{example}
 
+\begin{example}
+The specimen in question, say a person, either is or is not taller than $6 \text{ft}$.
+\end{example}
+
+\begin{example}
+The specimen in question, say a book, either does or does not have a yellow cover.
+\end{example}
+
+Data types that fall firmly on the qualitative side are Nominal and Ordinal data types. However, the Ordinal data type can sometimes be considered Quantitative, but with limited computational operations allowed on the data.\\
+
+Quantitative data are measurements taken from specimen.
+
+\begin{example}
+The specimen is a student from school A. The quantitative data is the measured height of the specimen. 
+\end{example}
+
+\begin{example}
+The specimen is a teacher from school A. The quantitative data is the quantity of COVID-19 antibodies measured within the specimen. 
+\end{example}
+
+\begin{example}
+The specimen is a student from school A. The quantitative data is the wavelength of photons reflected off of the surface of the specimen iris. 
+\end{example}
+
 \begin{dataset}
-The player's name, `Player', is Nominal data. The set of numbers out to the left of the `Player' column represents an index. An index is used to indicate an order for a given element, which makes indices Ordinal data. \\[1ex]
-\input{data_types/players_last_name_d_nominal}\\[4ex]
+Below is a list of player names for some of those players in the NBA or the ABA with last names beginning with `H'. The player's name, `Player', is Nominal data. The set of numbers out to the left of the `Player' column represents an index. An index is used to indicate an order, rank, or position for a given element, which makes indices Ordinal data. \\[1ex]
+\input{data_types/players_last_name_d_nominal}\\[2ex]
+Is the `Player' data in the above list a sample or population? If it is a sample, what is the population?
 \end{dataset}
 
 \begin{dataset}
-The player's name, `Player', is Nominal data. The year at which the player began their career, `From', is Interval data. The weight of the player, `Wt', is Ratio data.\\[1ex]
-\input{data_types/players_last_name_d_nominal_interval_ratio}\\[4ex]
+Below is a list of player names, career starting years, and weights for some of those players in NBA or ABA with last names beginning with `H'. The player's name, `Player', is Nominal data. The year at which the player began their career, `From', is Interval data. The weight of the player, `Wt', is Ratio data.\\[1ex]
+\input{data_types/players_last_name_d_nominal_interval_ratio}\\[2ex]
+Is the `Wt' data in the above list a sample or population? If it is a sample, what is the population?
 \end{dataset}
 
 \begin{dataset}
-The points ranking of the player, `Rk', is ordinal data. The player's name, `Player', is Nominal data type. The total points a player scored during the 2021-2022 season, `PTS', is Ratio data.\\[1ex]
-\input{data_types/players_points_rankings_nominal_ordinal_ratio}\\[4ex]
+Below is a list of player names and season 2021-2022 point totals for those players ranking in the top $20$ regarding total season points. The points ranking of the player, `Rk', is ordinal data. The player's name, `Player', is Nominal data type. The total points a player scored during the 2021-2022 season, `PTS', is Ratio data.\\[1ex]
+\input{data_types/players_points_rankings_nominal_ordinal_ratio}\\[2ex]
+Is the `PTS' data in the above list a sample or population? If it is a sample, what is the population?
 \end{dataset}
