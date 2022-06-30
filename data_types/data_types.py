@@ -3,46 +3,46 @@ from IPython.display import display
 
 
 # We population the raw data for players in the NBA or ABA with last name
-# beginning with a D, as of June 29, 2022
-players_last_name_d = pd.read_excel('player_last_name_d.xls')
+# beginning with a H, as of June 29, 2022
+players_last_name_h = pd.read_excel('player_last_name_h.xls')
 
 
 # We drop the 'Player-additional' column
-players_last_name_d.drop(columns=['Player-additional'], inplace=True)
+players_last_name_h.drop(columns=['Player-additional'], inplace=True)
 
 
 # We display the first 17 names, before resetting the index to 'Player', so
 # that we know the name of the 17th player when we wish to display the first
 # 17 players using the new 'Player' index in subsequent queries. This will
 # also serve as a nominal data-type tabel
-display(players_last_name_d.loc[:16]['Player'])
+display(players_last_name_h.loc[:16]['Player'])
 print('\n')
 
 
-# Sending players_last_name_d.loc[:16]['Player'] data table to a .tex file
-with open('players_last_name_d_nominal.tex', 'w') as file:
-    file.write(players_last_name_d.loc[:16]['Player'].to_latex())
+# Sending players_last_name_h.loc[:16]['Player'] data table to a .tex file
+with open('players_last_name_h_nominal.tex', 'w') as file:
+    file.write(players_last_name_h.loc[:16]['Player'].to_latex())
 
 
 # Resetting the index to 'Player'
-players_last_name_d = players_last_name_d.set_index('Player')
+players_last_name_h = players_last_name_h.set_index('Player')
 
 
 # Sorting the data by 'From', which is the year the player began their career
 # in the NBA or ABA. This will serve to display the difference between nominal,
 # interval, and ratio data-types
-display(players_last_name_d.loc[:'Chick Halbert',\
+display(players_last_name_h.loc[:'Chick Halbert',\
     ['From', 'Wt']].sort_values('From'))
 print('\n')
 
 
 # Sending
-# players_last_name_d.loc[:'Chick Halbert',\
+# players_last_name_h.loc[:'Chick Halbert',\
 #    ['From', 'Wt']].sort_values('From')
 # data table to a .tex file
-with open('players_last_name_d_nominal_interval_ratio.tex', 'w') as file:
+with open('players_last_name_h_nominal_interval_ratio.tex', 'w') as file:
     file.write(
-        players_last_name_d.loc[:'Chick Halbert',\
+        players_last_name_h.loc[:'Chick Halbert',\
         ['From', 'Wt']].sort_values('From').to_latex()
         )
 
