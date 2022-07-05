@@ -1,0 +1,378 @@
+id,candidate,song,artist,sentiment,theme,album_release_date
+1,Mike Huckabee,None Shall Pass,Aesop Rock,neutral,N/A,2011
+2,Mike Huckabee,Wellstone,Soul Khan,negative,N/A,2012
+3,Jeb Bush,Awe,Dez & Nobs,neutral,N/A,2006
+4,Jeb Bush,The Truth,Diabolic,negative,political,2006
+5,Jeb Bush,Money Man,Gorilla Zoe,negative,personal,2007
+6,Jeb Bush,Hidden Agenda,K-Rino,negative,political,2012
+7,Jeb Bush,Bricks and Marijuana,Kase,neutral,N/A,2001
+8,Jeb Bush,Bush Song,Macklemore,negative,political,2005
+9,Jeb Bush,Shoot Me in the Head,R.A. The Rugged Man,negative,political,2013
+10,Jeb Bush,Chamber of Fear,RZA,neutral,personal,2005
+11,Jeb Bush,Tell Me Why,Zeno,neutral,personal,2005
+12,Ben Carson,Next Black President,King Los,positive,N/A,2011
+13,Chris Christie,Daydreaming,Awkwafina,neutral,N/A,2014
+14,Chris Christie,Brass Tacks,Chris Webby,neutral,N/A,2016
+15,Ted Cruz,PNT,Apollo Brown & Ras Kass,negative,political,2015
+16,Hillary Clinton,Tec in the Church,Joyner Lucas,neutral,N/A,2016
+17,Hillary Clinton,Thugz Tear Dropz,Young Noble,negative,N/A,2013
+18,Hillary Clinton,Gotta Be Insanity,Ice Cube,positive,personal,2000
+19,Hillary Clinton,Shorty Baby,Bas,negative,personal,2013
+20,Hillary Clinton,Take Notice,Sheek Louch,neutral,N/A,2012
+21,Hillary Clinton,Disgusting,Logic,neutral,personal,2012
+22,Hillary Clinton,My Heart,Jae Tips,neutral,personal,2011
+23,Hillary Clinton,We Can Get It On,Yo Gotti,neutral,personal,2012
+24,Hillary Clinton,Where They Do That At,Yo Gotti,positive,N/A,2015
+25,Hillary Clinton,What If,Nas,neutral,N/A,2009
+26,Hillary Clinton,We Live This,Roxanne Shant̩,neutral,N/A,2000
+27,Hillary Clinton,Set Me Free,Crunch Lo,neutral,N/A,2005
+28,Hillary Clinton,Letter to the King,The Game,neutral,political,2008
+29,Hillary Clinton,Grillz,Ali,neutral,N/A,2005
+30,Hillary Clinton,Nothing on My Mind,AllDay,neutral,N/A,2013
+31,Hillary Clinton,Gossip Folks,Angel Haze,negative,N/A,2012
+32,Hillary Clinton,No Church in the Wild Freestyle,Angel Haze,negative,political,2012
+33,Hillary Clinton,Again (Stankonia Remix),Big Boi,neutral,N/A,2001
+34,Hillary Clinton,Energy,Big Boi,neutral,personal,2008
+35,Hillary Clinton,No Sunshine,Rhymefest,positive,money,2007
+36,Hillary Clinton,Unapologetic,Charles Hamilton,negative,political,2008
+37,Hillary Clinton,Dark Night of the Blood Spiller,Chino XL,negative,sexual,1994
+38,Hillary Clinton,Nunca,Chino XL,neutral,N/A,2001
+39,Hillary Clinton,Datpiff (freeverse series Ep. 4),Chris Webby,neutral,N/A,2016
+40,Hillary Clinton,One,Corny,positive,money,2014
+41,Hillary Clinton,Single Again (Remix),Trina,positive,N/A,2007
+42,Hillary Clinton,Fukinwichu,Cunninlynguists,negative,personal,2001
+43,Hillary Clinton,Opening Day,E-dubble,negative,N/A,2010
+44,Hillary Clinton,Role Model,Eminem,negative,N/A,1999
+45,Hillary Clinton,Sway in the Morning Freestyle,Eminem,negative,political,2015
+46,Hillary Clinton,A Milli,Fabolous,negative,personal,2008
+47,Hillary Clinton,Hit It for Free,Field Mob,negative,personal,2002
+48,Hillary Clinton,Make U Feel Alright,Jay Da Menace,positive,personal,2009
+49,Hillary Clinton,Dope Boy,Gorilla Zoe,neutral,N/A,2009
+50,Hillary Clinton,Money Man,Gorilla Zoe,neutral,personal,2007
+51,Hillary Clinton,What's Goin' On,Gravediggaz,neutral,personal,1997
+52,Hillary Clinton,Greasy,Gucci Mane,neutral,N/A,2013
+53,Hillary Clinton,Every Girl,Gudda Gudda,neutral,N/A,2010
+54,Hillary Clinton,Bad Bad Bad,Gucci Mane,positive,personal,2010
+55,Hillary Clinton,Hand of the Dead Body,Ice Cube,negative,personal,1994
+56,Hillary Clinton,Stand Tall,Ice Cube,negative,N/A,2008
+57,Hillary Clinton,American History X,Ill Bill,negative,political,2004
+58,Hillary Clinton,Twisted Thoughts,ISO,neutral,political,2015
+59,Hillary Clinton,Holla at a Playa (Remix),Jae Millz,neutral,political,2008
+60,Hillary Clinton,Mayor Bloomberg: Who's Really in Control?,Jasiri X,neutral,N/A,2013
+61,Hillary Clinton,NYMP,Jay Z,neutral,political,1999
+62,Hillary Clinton,"Bitch, Don't Kill My Vibe (Remix)",Jay Z,neutral,N/A,2012
+63,Hillary Clinton,I Luv Your Girl (Remix),Jeezy,neutral,N/A,2008
+64,Hillary Clinton,U Ain't Fresh,KAM,neutral,personal,2000
+65,Hillary Clinton,Pressure,Killer Mike,negative,political,2008
+66,Hillary Clinton,R.I.P.,King Kold,neutral,N/A,2014
+67,Hillary Clinton,Bring It Back,KRS-ONE,neutral,N/A,1997
+68,Hillary Clinton,Smilin' Faces,Kutt Calhoun,negative,N/A,2008
+69,Hillary Clinton,Whatever You Want,Big Sean,positive,money,2010
+70,Hillary Clinton,Lollipop,Lil Wayne,neutral,personal,2008
+71,Hillary Clinton,Let's Stay Together,Ludacris,negative,personal,2008
+72,Hillary Clinton,Politics as Usual (Obama Is Here),Ludacris,negative,political,2008
+73,Hillary Clinton,The Ghetto Won't Change,Master P,negative,political,1996
+74,Hillary Clinton,Bitch I'm Bill Clinton,Lil B,positive,political,2010
+75,Hillary Clinton,Fuck the Government,Mediumjay,negative,political,2012
+76,Hillary Clinton,Cradle Rock,Method Man,negative,political,1998
+77,Hillary Clinton,Vietnam,Mickey Factz,neutral,political,2008
+78,Hillary Clinton,A Thing for Me,G-Eazy,neutral,personal,2011
+79,Hillary Clinton,Poizon Windz,Monsta Island Czars,neutral,N/A,2003
+80,Hillary Clinton,Little This Little That,Naj Murph,neutral,personal,2013
+81,Hillary Clinton,Male Feminist,Mazeman,positive,political,2011
+82,Hillary Clinton,Shoot Me a Fair One,Papoose,negative,political,2008
+83,Hillary Clinton,Krazy,Pitbull,neutral,personal,2009
+84,Hillary Clinton,Happy People,Prince Ital Joe,negative,political,1993
+85,Hillary Clinton,Yzark,Proof,neutral,personal,2004
+86,Hillary Clinton,PSA,Pryde,neutral,personal,2012
+87,Hillary Clinton,Fall Down Brew,R.A. the Rugged Man,negative,N/A,2008
+88,Hillary Clinton,Smells Like,R.A. The Rugged Man,neutral,sexual,2013
+89,Hillary Clinton,Born to Ball,Skeme,positive,money,2012
+90,Hillary Clinton,RNQ,Rhymefest,negative,political,2009
+91,Hillary Clinton,TimeZone,Saba,positive,personal,2014
+92,Hillary Clinton,White Girl (Remix),Rick Ross,positive,N/A,2007
+93,Hillary Clinton,Now That I'm Paid,Rick Ross,neutral,N/A,2012
+94,Hillary Clinton,Life So Hard,Migos,positive,N/A,2015
+95,Hillary Clinton,I'm Me Freestyle,"Royce Da 5'9""",neutral,N/A,2008
+96,Hillary Clinton,Back Together,Nicki Minaj,positive,N/A,2015
+98,Hillary Clinton,What the Fuck Is Up?,Scarlett,neutral,personal,1999
+99,Hillary Clinton,Shit Iz Real,Shyheim,neutral,money,1996
+100,Hillary Clinton,Badman in Tivoli,Skepta,neutral,personal,2012
+101,Hillary Clinton,Fresh,Slick Rick,neutral,personal,1998
+102,Hillary Clinton,Sky Lanterns,Social Club,neutral,N/A,2015
+103,Hillary Clinton,Gang Love,T.H.U.G. Angelz,negative,political,2008
+104,Hillary Clinton,Nightmares of the Bottom (Triggamix),Trey Songz,negative,sexual,2011
+105,Hillary Clinton,Rich the GOAT,Rich The Kid,positive,political,2016
+106,Hillary Clinton,I Shoulda Tried Harder,Wax,neutral,personal,2013
+107,Hillary Clinton,Girls Got a Gun,Yo-Yo,negative,personal,1993
+108,Hillary Clinton,For Real,Yung God,neutral,personal,2014
+109,Bernie Sanders,Valleys,Lupe Fiasco,positive,political,2015
+110,Bernie Sanders,The Ancap Rap,Young Rippa,negative,political,2015
+111,Donald Trump,Johnny Ryall,Beastie Boys,neutral,N/A,1989
+112,Donald Trump,Protect Ya Neck II the Zoo,12 O'Clock - Brooklyn Zu,positive,money,1995
+113,Donald Trump,My Word Is Bond,Donald D,positive,N/A,1989
+114,Donald Trump,50/Banks,50 Cent,positive,money,2002
+115,Donald Trump,Skill Trade,Nice,positive,money,1990
+116,Donald Trump,Strip Club Luv,69 Boyz,positive,money,1998
+117,Donald Trump,No Shots,7L & Esoteric,positive,money,2010
+118,Donald Trump,Skypager,A Tribe Called Quest,positive,money,1991
+119,Donald Trump,Dolly and the Rat Trap,Ultramagnetic MC's,neutral,money,1992
+120,Donald Trump,The Coup,The Coup,negative,political,1993
+121,Donald Trump,Give It Up Fast,Nas,positive,hotel,1996
+122,Donald Trump,Trailer,Ace Hood,positive,money,2013
+123,Donald Trump,The Ebonic Plague,Ras Kass,neutral,N/A,1997
+124,Donald Trump,Yeah Yeah Yeah,Akala,positive,money,2006
+125,Donald Trump,Boughetto,Ali,positive,money,2002
+126,Donald Trump,Mafioso,Kool G. Rap,positive,hotel,1998
+127,Donald Trump,Soldiers,Master P,neutral,N/A,1998
+128,Donald Trump,Turn It Into Somethin',Frost,positive,hotel,1999
+129,Donald Trump,Fire,Makeba Mooncycle,neutral,N/A,1999
+130,Donald Trump,Ba Bump,Black Eyed Peas,positive,money,2006
+131,Donald Trump,Open Your Mind,Black The Ripper,positive,money,2013
+132,Donald Trump,PlaneWalker,Bobby Raps,positive,money,2015
+133,Donald Trump,New World,Nas,neutral,money,1999
+134,Donald Trump,Speed Law,Yasiin Bey (Mos Def),positive,hotel,1999
+135,Donald Trump,Molly (remix),Boston George,positive,money,2013
+136,Donald Trump,Cloud Aura,Brooke Candy,positive,personal,2013
+137,Donald Trump,Hey Papi,Jay Z,positive,hotel,2000
+138,Donald Trump,E.I.,Nelly,positive,hotel,2000
+139,Donald Trump,Dipshits,Cam'ron,positive,hotel,2014
+140,Donald Trump,Soundscience,Souls of Mischief,neutral,personal,2000
+141,Donald Trump,Everywhere I Go,Tha Eastsidaz,positive,hotel,2001
+142,Donald Trump,Ghetto Manifesto,The Coup,neutral,N/A,2001
+143,Donald Trump,Shorty,Chingy,positive,money,2003
+144,Donald Trump,Crazy,50 Cent,positive,hotel,2002
+145,Donald Trump,Wet! Wet! Wet!,Princess Superstar,neutral,hotel,2002
+146,Donald Trump,Get Paid,Styles P,positive,hotel,2002
+147,Donald Trump,Hustle Harder,Common,positive,hotel,2014
+148,Donald Trump,John They're Stealing,Thirstin Howl III,neutral,money,2002
+149,Donald Trump,Motion,Curren$y,positive,hotel,2012
+150,Donald Trump,Kick Back Music,CyHi The Prynce,neutral,hotel,2013
+151,Donald Trump,SkyScraper V,D.R.C,positive,money,2013
+152,Donald Trump,Take It Off Part 2,Busta Rhymes,positive,hotel,2002
+153,Donald Trump,Jussummen,Das EFX,positive,money,1992
+154,Donald Trump,What More Can I Say,Jay Z,positive,hotel,2003
+155,Donald Trump,Nothing More,DeDa,positive,money,2003
+156,Donald Trump,Tightanic,Demark,positive,money,2014
+157,Donald Trump,Feel the Beat,LL Cool J,positive,hotel,2004
+158,Donald Trump,Shyne,Shyne,positive,hotel,2004
+159,Donald Trump,Right to Bare Arms,Killah Priest,negative,N/A,2005
+160,Donald Trump,We Gon' Make It,Diddy,positive,money,2006
+161,Donald Trump,Good Morning,Cage,neutral,N/A,2005
+162,Donald Trump,Dumb,The High & Mighty,negative,personal,2005
+163,Donald Trump,I Wish You Would,Chino XL,neutral,The Apprentice,2005
+164,Donald Trump,Money Talks,Double X Posse,positive,money,1995
+165,Donald Trump,I'm Ballin' Man,Drama,positive,money,2000
+166,Donald Trump,Shut Up Bitch,Lil Kim,positive,hotel,2005
+167,Donald Trump,Trump Change,E-40,positive,money,1998
+168,Donald Trump,Heavy Metal Kings,Jedi Mind Tricks,neutral,The Apprentice,2006
+169,Donald Trump,The N,Nas,neutral,personal,2006
+170,Donald Trump,Buy U Some 2,Erick Sermon,positive,money,2006
+171,Donald Trump,Favorite Drug,Styles P,positive,hotel,2006
+172,Donald Trump,Mo Cars Mo Hoes,Fabolous,positive,money,2008
+173,Donald Trump,So What,Far East Movement,positive,money,2010
+174,Donald Trump,LIE-Z,Fat Boys,positive,money,1989
+175,Donald Trump,Jealousy,Fat Joe,positive,money,2006
+176,Donald Trump,Kick it Like That,Styles P,positive,hotel,2006
+177,Donald Trump,Playas Only,The Game,neutral,hotel,2006
+178,Donald Trump,The Morning News,Chamillionaire,neutral,N/A,2007
+179,Donald Trump,Blow Ya Mind Remix,Jadakiss,positive,hotel,2007
+180,Donald Trump,Invisible Man,Joe Budden,positive,hotel,2007
+181,Donald Trump,My Drink n My 2 Step (Remix),Kanye West,neutral,The Apprentice,2007
+182,Donald Trump,Midgets and Giants,Sage Francis,neutral,The Apprentice,2007
+183,Donald Trump,We Made Our Own,Future,positive,money,2013
+184,Donald Trump,Suicide,Fabolous,positive,hotel,2008
+185,Donald Trump,Mo Cars Mo Hoes,Freck Billionaire,positive,hotel,2008
+186,Donald Trump,Love Don't Cost a Thing (Neptunes Remix),Ghostface Killah,positive,money,2012
+187,Donald Trump,Truth,God,positive,money,2014
+188,Donald Trump,Song for the Ville,J.Cole,neutral,money,2010
+189,Donald Trump,Don't Trip,Petey Pablo,neutral,N/A,2009
+190,Donald Trump,Loose,Spank Rock,positive,hotel,2008
+191,Donald Trump,How We Rock,Termanology,neutral,money,2008
+192,Donald Trump,Pimp Slap,Tyler the Creator,neutral,personal,2008
+193,Donald Trump,I Gotta Say What Up!!!,Ice Cube,positive,money,1990
+194,Donald Trump,Three Strikes You In,Ice Cube,positive,money,1998
+195,Donald Trump,Folklore,Dumbtron,negative,political,2009
+196,Donald Trump,Put Ya in Da Game,Fat Joe,positive,hotel,2009
+197,Donald Trump,Daze,Ja-Bar,positive,money,2010
+198,Donald Trump,I'm Ballin,Rick Ross,neutral,money,2009
+199,Donald Trump,So Appalled,Kanye West,neutral,money,2010
+200,Donald Trump,Independent,KXNG Crooked,positive,hotel,2010
+201,Donald Trump,Blue Flame Remix,Lil B,neutral,The Apprentice,2010
+202,Donald Trump,Success,Jay Z,positive,hotel,2007
+203,Donald Trump,Zoom Zooms and Wam Wam,Jay-O-Felony,positive,personal,1995
+204,Donald Trump,Street 2 Street,Jay-O-Felony,positive,money,1997
+205,Donald Trump,Still Get It in Ohio,Machine Gun Kelly,neutral,N/A,2010
+206,Donald Trump,Thug Motivation 101,Jeezy,positive,N/A,2005
+207,Donald Trump,Trump,Jeezy,positive,money,2011
+208,Donald Trump,Vagina,"Royce Da 5'9""",positive,hotel,2010
+209,Donald Trump,If You Love Me,Sheek Louch,positive,hotel,2010
+210,Donald Trump,Salute,The Diplomats,neutral,hotel,2010
+211,Donald Trump,I Don't Play With Guns,Alley Boy,neutral,N/A,2011
+212,Donald Trump,Shootin,Juicy J,neutral,The Apprentice,2013
+213,Donald Trump,Tell Me What You're Lookin' For,Kane & Abel,positive,money,1998
+214,Donald Trump,Tim Westwood Freestyle,Kanye West,positive,money,2004
+215,Donald Trump,Webster's Laboratory,Chris Webby,neutral,The Apprentice,2011
+216,Donald Trump,P.A.,Mac Miller,negative,personal,2011
+217,Donald Trump,Is It Love,Kendrick Lamar,positive,money,2009
+218,Donald Trump,Another One,Rock,neutral,N/A,2011
+219,Donald Trump,Reputations on the Line,Kevin Gates,positive,money,2011
+220,Donald Trump,Best Days of Lives,Donnis,neutral,N/A,2011
+221,Donald Trump,Paid,Kid Rock,positive,money,1996
+222,Donald Trump,Lights,Frank Ocean,neutral,money,2011
+223,Donald Trump,Tower Heist,Nas,positive,hotel,2011
+224,Donald Trump,Once Upon a Time,King Sun,positive,money,1994
+225,Donald Trump,On the Real,Nas,positive,hotel,2011
+226,Donald Trump,Thug Chronicles,Kool G. Rap,positive,money,2002
+227,Donald Trump,K.O.T.T.O.N.M.O.U.T.H.,Kottonmouth Kings,neutral,The Apprentice,2008
+228,Donald Trump,Your World & My World,Raekwon,positive,hotel,2011
+229,Donald Trump,You Know What,Tinie Tempah,neutral,The Apprentice,2011
+230,Donald Trump,Elimination Chamber,Action Bronson,positive,hotel,2012
+231,Donald Trump,Help Me,Deuce,neutral,money,2012
+232,Donald Trump,Flex 36,Lil B,positive,N/A,2013
+233,Donald Trump,Jet Life (Remix),Jeezy,positive,hotel,2012
+234,Donald Trump,What's Up Wit Dat,Lil Wayne,positive,money,2000
+235,Donald Trump,Get Down,Lil Wayne,positive,money,2004
+236,Donald Trump,Ice Cream,Lil Wayne,positive,money,2009
+237,Donald Trump,Racks,Lil Wayne,positive,money,2011
+238,Donald Trump,Ball,Lil Wayne,neutral,The Apprentice,2012
+239,Donald Trump,Lil Snupe Meek Mill Freestyle Part 2,Lil' Snupe,positive,money,2013
+240,Donald Trump,Comin' for Ya Head,Raekwon,positive,hotel,2012
+241,Donald Trump,Blame the Label (Ghida Fakhry),The Narcicyst,neutral,personal,2012
+242,Donald Trump,Perfume,Aasim,positive,hotel,2013
+243,Donald Trump,Hip Hop Quotables,Ludacris,positive,money,2003
+244,Donald Trump,Raiders Cap,Demigodz,negative,personal,2013
+245,Donald Trump,Donald Trump,Mac Miller,positive,money,2011
+246,Donald Trump,Thoughts From a Balcony,Mac Miller,positive,money,2012
+247,Donald Trump,Dis Ain't What You Want (Remix),French Montana,negative,N/A,2013
+248,Donald Trump,Don't Drop That,Futuristic,neutral,The Apprentice,2013
+249,Donald Trump,211,Master P,positive,money,1994
+250,Donald Trump,Morphine,Gorilla Warfare Tactics,positive,hotel,2013
+251,Donald Trump,Off the Corner,Meek Mill,positive,money,2014
+252,Donald Trump,Since Day 1,Migos,positive,money,2013
+253,Donald Trump,Giv No Fuks,Migos,positive,N/A,2014
+254,Donald Trump,"Dag, Philly Too",Homeboy Sandman,neutral,N/A,2013
+255,Donald Trump,Neighborhood Scientists,Migos,positive,money,2015
+256,Donald Trump,Bars,Migos,positive,money,2016
+257,Donald Trump,Minority Report,KXNG Crooked,positive,hotel,2013
+258,Donald Trump,Red Dot Music,Loaded Lux,neutral,money,2013
+259,Donald Trump,Break My Wrist,PeeWee Longway,neutral,The Apprentice,2013
+260,Donald Trump,Money Is My Bitch,Nas,positive,personal,1999
+261,Donald Trump,Karate Chop (Freestyle),Shaquille O'Neal,neutral,money,2013
+262,Donald Trump,The People's Douche,Spose,neutral,money,2013
+263,Donald Trump,Make the World Go Round,Nas,positive,hotel,2008
+264,Donald Trump,I Shoulda Tried Harder,Wax,neutral,N/A,2013
+265,Donald Trump,Break My Wrist,Young Thug,neutral,The Apprentice,2013
+266,Donald Trump,Loco-Motive,Nas,positive,money,2012
+267,Donald Trump,Loaded,Young Thug,neutral,N/A,2013
+268,Donald Trump,Country Grammar (Hot Shit),Nelly,positive,money,2000
+269,Donald Trump,Its Sad Boy,Yung Gleesh,neutral,hotel,2013
+270,Donald Trump,I Wanna Be With You,Nicki Minaj,positive,hotel,2013
+271,Donald Trump,Party Ain't A Party,2 Chainz,positive,hotel,2014
+272,Donald Trump,Last Year,Borgore,neutral,power,2014
+273,Donald Trump,InHeiritance,King Mez,negative,N/A,2014
+274,Donald Trump,What We Doing,Fat Trel,positive,hotel,2014
+275,Donald Trump,Sirens,Hoodie Allen,positive,hotel,2014
+276,Donald Trump,Tru Master,Pete Rock,positive,money,1998
+277,Donald Trump,Hollow Da Don vs. Joe Budden,Joe Budden,neutral,The Apprentice,2014
+278,Donald Trump,Get It (DT),Pharrell,positive,money,2011
+279,Donald Trump,Bizarre,Mouf,neutral,The Apprentice,2014
+280,Donald Trump,The Dangerous Three,R.A. The Rugged Man,positive,power,2013
+281,Donald Trump,Up Like Trump,Rae Sremmurd,positive,personal,2015
+282,Donald Trump,Incarcerated Scarfaces,Raekwon,positive,money,1995
+283,Donald Trump,Flawless Remix,Nicki Minaj,positive,hotel,2014
+284,Donald Trump,Dart School,Raekwon,neutral,N/A,2011
+285,Donald Trump,New York Minute (Remix),Nicki Minaj,positive,hotel,2010
+286,Donald Trump,Google That,Raekwon,positive,money,2012
+287,Donald Trump,Hazelton Trump,OB O'Brien,positive,hotel,2014
+288,Donald Trump,Da Funk,Redman,positive,personal,1992
+289,Donald Trump,Sacrifices,Rich Homie Quan,positive,money,2013
+290,Donald Trump,10 2 10 (Remix),Rick Ross,positive,hotel,2014
+291,Donald Trump,This Is the Life,Rick Ross,positive,hotel,2008
+292,Donald Trump,I Mean It (Remix),Rick Ross,neutral,money,2014
+293,Donald Trump,Pirates,Rick Ross,positive,money,2012
+294,Donald Trump,Sixteen,Rick Ross,positive,hotel,2012
+295,Donald Trump,Think Like a Man,Rick Ross,positive,hotel,2012
+296,Donald Trump,Maybe You Love Me,RiFF RAFF,positive,hotel,2014
+297,Donald Trump,Keith Sweat (Jodeci Freestyle),Young Tero,neutral,The Apprentice,2014
+298,Donald Trump,PNT,Apollo Brown & Ras Kass,neutral,political,2015
+299,Donald Trump,She Wanna Fuck,Rick Ross,positive,money,2015
+300,Donald Trump,Dope Spot,Cam'ron,neutral,political,2015
+301,Donald Trump,Florida State,RiFF RAFF,positive,money,2015
+302,Donald Trump,Have a Nice Day,Ab-Stract,negative,political,2015
+303,Donald Trump,Flavas Back,Chino Tovar,negative,political,2015
+304,Donald Trump,Making Some Moves,DAJ,negative,N/A,2015
+305,Donald Trump,10 Times,Freddie Gibbs,positive,hotel,2015
+306,Donald Trump,Sway in The Morning Freestyle,Eminem,negative,political,2015
+307,Donald Trump,Straight Drop,Gucci Mane,neutral,N/A,2015
+308,Donald Trump,So Tight,Hugh Lee,neutral,sexual,2015
+309,Donald Trump,Spraying My Pen,Saukrates,positive,money,2013
+310,Donald Trump,Money and the Power,Scarface,positive,money,1991
+311,Donald Trump,Way It Go,SD,positive,political,2015
+312,Donald Trump,Black Friday,Kendrick Lamar,negative,political,2015
+313,Donald Trump,One Name,Sheek Louch,positive,money,2005
+314,Donald Trump,Men of Respect,Sheek Louch,neutral,N/A,2007
+315,Donald Trump,Ransom,Rich White Ladies,negative,N/A,2015
+316,Donald Trump,Spend Some Cheese,Shyne,positive,money,2000
+317,Donald Trump,Bad Boyz,Shyne,positive,hotel,2000
+318,Donald Trump,Bonnie & Shyne,Shyne,neutral,hotel,2000
+319,Donald Trump,Free Enterprise,Rick Ross,negative,political,2015
+320,Donald Trump,El Chapo,The Game,negative,personal,2015
+321,Donald Trump,"Blase (Jeezy, Juicy J & Diddy Remix)",Ty Dolla $ign,negative,political,2015
+322,Donald Trump,Coke & Wet,Spank Rock,positive,money,2006
+323,Donald Trump,R.I.C.O. (Remix),Waka Flocka Flame,negative,political,2015
+324,Donald Trump,Loco,Young Buck,negative,political,2015
+325,Donald Trump,Big Tyme,Stretch,positive,money,2001
+326,Donald Trump,Pussy,Strings,positive,money,2002
+327,Donald Trump,Computers (Freestyle),Migos,neutral,hotel,2015
+328,Donald Trump,Trap Problems,Migos,neutral,The Apprentice,2015
+329,Donald Trump,Zion,Omen,neutral,N/A,2015
+330,Donald Trump,MONEY LIKE MY OG,Swagg Porter & Star,positive,hotel,2012
+331,Donald Trump,I Think I'm Swipa,Swipa,positive,money,2013
+332,Donald Trump,I Need Dollas,T.I.,positive,money,2012
+333,Donald Trump,Buku,Robb Bank$,positive,hotel,2015
+334,Donald Trump,Gratitude,Talib Kweli,positive,hotel,2015
+335,Donald Trump,Fired,Tech N9ne,neutral,The Apprentice,2015
+336,Donald Trump,Wet Dollars,Tink,positive,hotel,2015
+337,Donald Trump,Purpose,Young Thug,neutral,N/A,2015
+338,Donald Trump,Datpiff (freeverse series Ep. 4),Chris Webby,neutral,N/A,2016
+339,Donald Trump,Driving Gloves,The Alchemist,positive,money,2015
+340,Donald Trump,Gucci Comin Home,BIA,neutral,N/A,2016
+341,Donald Trump,Pimps (Free Stylin at the Fortune 500 Club),The Coup,positive,money,1994
+342,Donald Trump,World War 6,Boosie Badazz,neutral,political,2016
+343,Donald Trump,Pop Style (Remix),Devvon Terrell,neutral,personal,2016
+344,Donald Trump,Slenderman,Germ,neutral,N/A,2016
+345,Donald Trump,Misconceptions 3,Jgivens,neutral,political,2016
+346,Donald Trump,Lost a Fan,KXNG Crooked,neutral,money,2016
+347,Donald Trump,FLEM,A$AP Ferg,negative,political,2016
+348,Donald Trump,Living the Life,The Notorious B.I.G.,positive,money,2005
+349,Donald Trump,Thought U Lost It,Caskey,negative,political,2016
+350,Donald Trump,I Need,Croosh,negative,political,2016
+351,Donald Trump,Bad Boy on Death Row,Dave East,negative,N/A,2016
+352,Donald Trump,CIT4DT,Dooley,negative,political,2016
+353,Donald Trump,Hard (Freestyle),"Royce Da 5'9""",positive,hotel,2016
+354,Donald Trump,High Seas (C+),Tom Hobbes,positive,money,2013
+355,Donald Trump,Priceless,Tory Lanez,positive,money,2014
+356,Donald Trump,Billionaire,Twista,positive,money,2009
+357,Donald Trump,Which Is Cool,Royce da 5�۪9�۝,positive,hotel,2016
+358,Donald Trump,My Speech (Queen's Speech Remix),Sik World,neutral,political,2016
+359,Donald Trump,Pocket Full of Stones,UGK,positive,N/A,1992
+360,Donald Trump,Nobody Speak,El-P,negative,personal,2016
+361,Donald Trump,Look Me in My Eyes,Vado,positive,hotel,2014
+362,Donald Trump,Everything's a Go (Remix),Waka Flocka Flame,positive,money,2012
+363,Donald Trump,Wicked Freestyle,Jadakiss,negative,N/A,2016
+364,Donald Trump,Castle,Kevin Gates,negative,N/A,2016
+365,Donald Trump,Cross 'Em Out and Put a 'K,Westside Connection,positive,money,1996
+366,Donald Trump,Muzzle Toe,Wu-Syndicate,positive,money,1999
+367,Donald Trump,Red Drops,Limbz,negative,money,2016
+368,Donald Trump,No Smoke,Montana of 300,negative,N/A,2016
+369,Donald Trump,Out Here,The Weeknd,positive,hotel,2016
+370,Donald Trump,Come Again,Rockie Fresh,negative,political,2016
+371,Donald Trump,Dope,T.I.,negative,N/A,2016
+372,Donald Trump,Come Down (Remix),T.I.,negative,political,2016
+373,Donald Trump,Miss U,Young Thug,positive,money,2013
+374,Donald Trump,On the Way,Young Thug,positive,money,2014
+375,Donald Trump,Digest It,Tiara,negative,political,2016
+376,Donald Trump,Constantly Hating,Young Thug,positive,money,2015
+377,Donald Trump,FDT (Fuck Donald Trump),YG & Nipsey Hussle,negative,political,2016
+378,Donald Trump,It's Goin' Down,Yung Joc,positive,money,2006

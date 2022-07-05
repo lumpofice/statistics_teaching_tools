@@ -1,0 +1,378 @@
+entry_id,song,artist_id,candidate_id,sentiment,theme,album_release_year
+1,None Shall Pass,1,1,neutral,,2011
+2,Wellstone,2,1,negative,,2012
+3,Awe,3,2,neutral,,2006
+4,The Truth,4,2,negative,political,2006
+5,Money Man,5,2,negative,personal,2007
+6,Hidden Agenda,6,2,negative,political,2012
+7,Bricks and Marijuana,7,2,neutral,,2001
+8,Bush Song,8,2,negative,political,2005
+9,Shoot Me in the Head,9,2,negative,political,2013
+10,Chamber of Fear,10,2,neutral,personal,2005
+11,Tell Me Why,11,2,neutral,personal,2005
+12,Next Black President,12,3,positive,,2011
+13,Daydreaming,13,4,neutral,,2014
+14,Brass Tacks,14,4,neutral,,2016
+15,PNT,15,5,negative,political,2015
+16,Tec in the Church,16,6,neutral,,2016
+17,Thugz Tear Dropz,17,6,negative,,2013
+18,Gotta Be Insanity,18,6,positive,personal,2000
+19,Shorty Baby,19,6,negative,personal,2013
+20,Take Notice,20,6,neutral,,2012
+21,Disgusting,21,6,neutral,personal,2012
+22,My Heart,22,6,neutral,personal,2011
+23,We Can Get It On,23,6,neutral,personal,2012
+24,Where They Do That At,23,6,positive,,2015
+25,What If,24,6,neutral,,2009
+26,We Live This,25,6,neutral,,2000
+27,Set Me Free,26,6,neutral,,2005
+28,Letter to the King,27,6,neutral,political,2008
+29,Grillz,28,6,neutral,,2005
+30,Nothing on My Mind,29,6,neutral,,2013
+31,Gossip Folks,30,6,negative,,2012
+32,No Church in the Wild Freestyle,30,6,negative,political,2012
+33,Again (Stankonia Remix),31,6,neutral,,2001
+34,Energy,31,6,neutral,personal,2008
+35,No Sunshine,32,6,positive,money,2007
+36,Unapologetic,33,6,negative,political,2008
+37,Dark Night of the Blood Spiller,34,6,negative,sexual,1994
+38,Nunca,34,6,neutral,,2001
+39,Datpiff (freeverse series Ep. 4),14,6,neutral,,2016
+40,One,35,6,positive,money,2014
+41,Single Again (Remix),36,6,positive,,2007
+42,Fukinwichu,37,6,negative,personal,2001
+43,Opening Day,38,6,negative,,2010
+44,Role Model,39,6,negative,,1999
+45,Sway in the Morning Freestyle,39,6,negative,political,2015
+46,A Milli,40,6,negative,personal,2008
+47,Hit It for Free,41,6,negative,personal,2002
+48,Make U Feel Alright,42,6,positive,personal,2009
+49,Dope Boy,5,6,neutral,,2009
+50,Money Man,5,6,neutral,personal,2007
+51,What's Goin' On,43,6,neutral,personal,1997
+52,Greasy,44,6,neutral,,2013
+53,Every Girl,45,6,neutral,,2010
+54,Bad Bad Bad,44,6,positive,personal,2010
+55,Hand of the Dead Body,18,6,negative,personal,1994
+56,Stand Tall,18,6,negative,,2008
+57,American History X,46,6,negative,political,2004
+58,Twisted Thoughts,47,6,neutral,political,2015
+59,Holla at a Playa (Remix),48,6,neutral,political,2008
+60,Mayor Bloomberg: Who's Really in Control?,49,6,neutral,,2013
+61,NYMP,50,6,neutral,political,1999
+62,"Bitch, Don't Kill My Vibe (Remix)",50,6,neutral,,2012
+63,I Luv Your Girl (Remix),51,6,neutral,,2008
+64,U Ain't Fresh,52,6,neutral,personal,2000
+65,Pressure,53,6,negative,political,2008
+66,R.I.P.,54,6,neutral,,2014
+67,Bring It Back,55,6,neutral,,1997
+68,Smilin' Faces,56,6,negative,,2008
+69,Whatever You Want,57,6,positive,money,2010
+70,Lollipop,58,6,neutral,personal,2008
+71,Let's Stay Together,59,6,negative,personal,2008
+72,Politics as Usual (Obama Is Here),59,6,negative,political,2008
+73,The Ghetto Won't Change,60,6,negative,political,1996
+74,Bitch I'm Bill Clinton,61,6,positive,political,2010
+75,Fuck the Government,62,6,negative,political,2012
+76,Cradle Rock,63,6,negative,political,1998
+77,Vietnam,64,6,neutral,political,2008
+78,A Thing for Me,65,6,neutral,personal,2011
+79,Poizon Windz,66,6,neutral,,2003
+80,Little This Little That,67,6,neutral,personal,2013
+81,Male Feminist,68,6,positive,political,2011
+82,Shoot Me a Fair One,69,6,negative,political,2008
+83,Krazy,70,6,neutral,personal,2009
+84,Happy People,71,6,negative,political,1993
+85,Yzark,72,6,neutral,personal,2004
+86,PSA,73,6,neutral,personal,2012
+87,Fall Down Brew,74,6,negative,,2008
+88,Smells Like,9,6,neutral,sexual,2013
+89,Born to Ball,75,6,positive,money,2012
+90,RNQ,32,6,negative,political,2009
+91,TimeZone,76,6,positive,personal,2014
+92,White Girl (Remix),77,6,positive,,2007
+93,Now That I'm Paid,77,6,neutral,,2012
+94,Life So Hard,78,6,positive,,2015
+95,I'm Me Freestyle,79,6,neutral,,2008
+96,Back Together,80,6,positive,,2015
+98,What the Fuck Is Up?,81,6,neutral,personal,1999
+99,Shit Iz Real,82,6,neutral,money,1996
+100,Badman in Tivoli,83,6,neutral,personal,2012
+101,Fresh,84,6,neutral,personal,1998
+102,Sky Lanterns,85,6,neutral,,2015
+103,Gang Love,86,6,negative,political,2008
+104,Nightmares of the Bottom (Triggamix),87,6,negative,sexual,2011
+105,Rich the GOAT,88,6,positive,political,2016
+106,I Shoulda Tried Harder,89,6,neutral,personal,2013
+107,Girls Got a Gun,90,6,negative,personal,1993
+108,For Real,91,6,neutral,personal,2014
+109,Valleys,92,7,positive,political,2015
+110,The Ancap Rap,93,7,negative,political,2015
+111,Johnny Ryall,94,8,neutral,,1989
+112,Protect Ya Neck II the Zoo,95,8,positive,money,1995
+113,My Word Is Bond,96,8,positive,,1989
+114,50/Banks,97,8,positive,money,2002
+115,Skill Trade,98,8,positive,money,1990
+116,Strip Club Luv,99,8,positive,money,1998
+117,No Shots,100,8,positive,money,2010
+118,Skypager,101,8,positive,money,1991
+119,Dolly and the Rat Trap,102,8,neutral,money,1992
+120,The Coup,103,8,negative,political,1993
+121,Give It Up Fast,24,8,positive,hotel,1996
+122,Trailer,104,8,positive,money,2013
+123,The Ebonic Plague,105,8,neutral,,1997
+124,Yeah Yeah Yeah,106,8,positive,money,2006
+125,Boughetto,28,8,positive,money,2002
+126,Mafioso,107,8,positive,hotel,1998
+127,Soldiers,60,8,neutral,,1998
+128,Turn It Into Somethin',108,8,positive,hotel,1999
+129,Fire,109,8,neutral,,1999
+130,Ba Bump,110,8,positive,money,2006
+131,Open Your Mind,111,8,positive,money,2013
+132,PlaneWalker,112,8,positive,money,2015
+133,New World,24,8,neutral,money,1999
+134,Speed Law,113,8,positive,hotel,1999
+135,Molly (remix),114,8,positive,money,2013
+136,Cloud Aura,115,8,positive,personal,2013
+137,Hey Papi,50,8,positive,hotel,2000
+138,E.I.,116,8,positive,hotel,2000
+139,Dipshits,117,8,positive,hotel,2014
+140,Soundscience,118,8,neutral,personal,2000
+141,Everywhere I Go,119,8,positive,hotel,2001
+142,Ghetto Manifesto,103,8,neutral,,2001
+143,Shorty,120,8,positive,money,2003
+144,Crazy,97,8,positive,hotel,2002
+145,Wet! Wet! Wet!,121,8,neutral,hotel,2002
+146,Get Paid,122,8,positive,hotel,2002
+147,Hustle Harder,123,8,positive,hotel,2014
+148,John They're Stealing,124,8,neutral,money,2002
+149,Motion,125,8,positive,hotel,2012
+150,Kick Back Music,126,8,neutral,hotel,2013
+151,SkyScraper V,127,8,positive,money,2013
+152,Take It Off Part 2,128,8,positive,hotel,2002
+153,Jussummen,129,8,positive,money,1992
+154,What More Can I Say,50,8,positive,hotel,2003
+155,Nothing More,130,8,positive,money,2003
+156,Tightanic,131,8,positive,money,2014
+157,Feel the Beat,132,8,positive,hotel,2004
+158,Shyne,133,8,positive,hotel,2004
+159,Right to Bare Arms,134,8,negative,,2005
+160,We Gon' Make It,135,8,positive,money,2006
+161,Good Morning,136,8,neutral,,2005
+162,Dumb,137,8,negative,personal,2005
+163,I Wish You Would,34,8,neutral,The Apprentice,2005
+164,Money Talks,138,8,positive,money,1995
+165,I'm Ballin' Man,139,8,positive,money,2000
+166,Shut Up Bitch,140,8,positive,hotel,2005
+167,Trump Change,141,8,positive,money,1998
+168,Heavy Metal Kings,142,8,neutral,The Apprentice,2006
+169,The N,24,8,neutral,personal,2006
+170,Buy U Some 2,143,8,positive,money,2006
+171,Favorite Drug,122,8,positive,hotel,2006
+172,Mo Cars Mo Hoes,40,8,positive,money,2008
+173,So What,144,8,positive,money,2010
+174,LIE-Z,145,8,positive,money,1989
+175,Jealousy,146,8,positive,money,2006
+176,Kick it Like That,122,8,positive,hotel,2006
+177,Playas Only,27,8,neutral,hotel,2006
+178,The Morning News,147,8,neutral,,2007
+179,Blow Ya Mind Remix,148,8,positive,hotel,2007
+180,Invisible Man,149,8,positive,hotel,2007
+181,My Drink n My 2 Step (Remix),150,8,neutral,The Apprentice,2007
+182,Midgets and Giants,151,8,neutral,The Apprentice,2007
+183,We Made Our Own,152,8,positive,money,2013
+184,Suicide,40,8,positive,hotel,2008
+185,Mo Cars Mo Hoes,153,8,positive,hotel,2008
+186,Love Don't Cost a Thing (Neptunes Remix),154,8,positive,money,2012
+187,Truth,155,8,positive,money,2014
+188,Song for the Ville,156,8,neutral,money,2010
+189,Don't Trip,157,8,neutral,,2009
+190,Loose,158,8,positive,hotel,2008
+191,How We Rock,159,8,neutral,money,2008
+192,Pimp Slap,160,8,neutral,personal,2008
+193,I Gotta Say What Up!!!,18,8,positive,money,1990
+194,Three Strikes You In,18,8,positive,money,1998
+195,Folklore,161,8,negative,political,2009
+196,Put Ya in Da Game,146,8,positive,hotel,2009
+197,Daze,162,8,positive,money,2010
+198,I'm Ballin,77,8,neutral,money,2009
+199,So Appalled,150,8,neutral,money,2010
+200,Independent,163,8,positive,hotel,2010
+201,Blue Flame Remix,61,8,neutral,The Apprentice,2010
+202,Success,50,8,positive,hotel,2007
+203,Zoom Zooms and Wam Wam,164,8,positive,personal,1995
+204,Street 2 Street,164,8,positive,money,1997
+205,Still Get It in Ohio,165,8,neutral,,2010
+206,Thug Motivation 101,51,8,positive,,2005
+207,Trump,51,8,positive,money,2011
+208,Vagina,79,8,positive,hotel,2010
+209,If You Love Me,20,8,positive,hotel,2010
+210,Salute,166,8,neutral,hotel,2010
+211,I Don't Play With Guns,167,8,neutral,,2011
+212,Shootin,168,8,neutral,The Apprentice,2013
+213,Tell Me What You're Lookin' For,169,8,positive,money,1998
+214,Tim Westwood Freestyle,150,8,positive,money,2004
+215,Webster's Laboratory,14,8,neutral,The Apprentice,2011
+216,P.A.,170,8,negative,personal,2011
+217,Is It Love,171,8,positive,money,2009
+218,Another One,172,8,neutral,,2011
+219,Reputations on the Line,173,8,positive,money,2011
+220,Best Days of Lives,174,8,neutral,,2011
+221,Paid,175,8,positive,money,1996
+222,Lights,176,8,neutral,money,2011
+223,Tower Heist,24,8,positive,hotel,2011
+224,Once Upon a Time,177,8,positive,money,1994
+225,On the Real,24,8,positive,hotel,2011
+226,Thug Chronicles,107,8,positive,money,2002
+227,K.O.T.T.O.N.M.O.U.T.H.,178,8,neutral,The Apprentice,2008
+228,Your World & My World,179,8,positive,hotel,2011
+229,You Know What,180,8,neutral,The Apprentice,2011
+230,Elimination Chamber,181,8,positive,hotel,2012
+231,Help Me,182,8,neutral,money,2012
+232,Flex 36,61,8,positive,,2013
+233,Jet Life (Remix),51,8,positive,hotel,2012
+234,What's Up Wit Dat,58,8,positive,money,2000
+235,Get Down,58,8,positive,money,2004
+236,Ice Cream,58,8,positive,money,2009
+237,Racks,58,8,positive,money,2011
+238,Ball,58,8,neutral,The Apprentice,2012
+239,Lil Snupe Meek Mill Freestyle Part 2,183,8,positive,money,2013
+240,Comin' for Ya Head,179,8,positive,hotel,2012
+241,Blame the Label (Ghida Fakhry),184,8,neutral,personal,2012
+242,Perfume,185,8,positive,hotel,2013
+243,Hip Hop Quotables,59,8,positive,money,2003
+244,Raiders Cap,186,8,negative,personal,2013
+245,Donald Trump,170,8,positive,money,2011
+246,Thoughts From a Balcony,170,8,positive,money,2012
+247,Dis Ain't What You Want (Remix),187,8,negative,,2013
+248,Don't Drop That,188,8,neutral,The Apprentice,2013
+249,211,60,8,positive,money,1994
+250,Morphine,189,8,positive,hotel,2013
+251,Off the Corner,190,8,positive,money,2014
+252,Since Day 1,78,8,positive,money,2013
+253,Giv No Fuks,78,8,positive,,2014
+254,"Dag, Philly Too",191,8,neutral,,2013
+255,Neighborhood Scientists,78,8,positive,money,2015
+256,Bars,78,8,positive,money,2016
+257,Minority Report,163,8,positive,hotel,2013
+258,Red Dot Music,192,8,neutral,money,2013
+259,Break My Wrist,193,8,neutral,The Apprentice,2013
+260,Money Is My Bitch,24,8,positive,personal,1999
+261,Karate Chop (Freestyle),194,8,neutral,money,2013
+262,The People's Douche,195,8,neutral,money,2013
+263,Make the World Go Round,24,8,positive,hotel,2008
+264,I Shoulda Tried Harder,89,8,neutral,,2013
+265,Break My Wrist,196,8,neutral,The Apprentice,2013
+266,Loco-Motive,24,8,positive,money,2012
+267,Loaded,196,8,neutral,,2013
+268,Country Grammar (Hot Shit),116,8,positive,money,2000
+269,Its Sad Boy,197,8,neutral,hotel,2013
+270,I Wanna Be With You,80,8,positive,hotel,2013
+271,Party Ain't A Party,198,8,positive,hotel,2014
+272,Last Year,199,8,neutral,power,2014
+273,InHeiritance,200,8,negative,,2014
+274,What We Doing,201,8,positive,hotel,2014
+275,Sirens,202,8,positive,hotel,2014
+276,Tru Master,203,8,positive,money,1998
+277,Hollow Da Don vs. Joe Budden,149,8,neutral,The Apprentice,2014
+278,Get It (DT),204,8,positive,money,2011
+279,Bizarre,205,8,neutral,The Apprentice,2014
+280,The Dangerous Three,9,8,positive,power,2013
+281,Up Like Trump,206,8,positive,personal,2015
+282,Incarcerated Scarfaces,179,8,positive,money,1995
+283,Flawless Remix,80,8,positive,hotel,2014
+284,Dart School,179,8,neutral,,2011
+285,New York Minute (Remix),80,8,positive,hotel,2010
+286,Google That,179,8,positive,money,2012
+287,Hazelton Trump,207,8,positive,hotel,2014
+288,Da Funk,208,8,positive,personal,1992
+289,Sacrifices,209,8,positive,money,2013
+290,10 2 10 (Remix),77,8,positive,hotel,2014
+291,This Is the Life,77,8,positive,hotel,2008
+292,I Mean It (Remix),77,8,neutral,money,2014
+293,Pirates,77,8,positive,money,2012
+294,Sixteen,77,8,positive,hotel,2012
+295,Think Like a Man,77,8,positive,hotel,2012
+296,Maybe You Love Me,210,8,positive,hotel,2014
+297,Keith Sweat (Jodeci Freestyle),211,8,neutral,The Apprentice,2014
+298,PNT,15,8,neutral,political,2015
+299,She Wanna Fuck,77,8,positive,money,2015
+300,Dope Spot,117,8,neutral,political,2015
+301,Florida State,210,8,positive,money,2015
+302,Have a Nice Day,212,8,negative,political,2015
+303,Flavas Back,213,8,negative,political,2015
+304,Making Some Moves,214,8,negative,,2015
+305,10 Times,215,8,positive,hotel,2015
+306,Sway in The Morning Freestyle,39,8,negative,political,2015
+307,Straight Drop,44,8,neutral,,2015
+308,So Tight,216,8,neutral,sexual,2015
+309,Spraying My Pen,217,8,positive,money,2013
+310,Money and the Power,218,8,positive,money,1991
+311,Way It Go,219,8,positive,political,2015
+312,Black Friday,171,8,negative,political,2015
+313,One Name,20,8,positive,money,2005
+314,Men of Respect,20,8,neutral,,2007
+315,Ransom,220,8,negative,,2015
+316,Spend Some Cheese,133,8,positive,money,2000
+317,Bad Boyz,133,8,positive,hotel,2000
+318,Bonnie & Shyne,133,8,neutral,hotel,2000
+319,Free Enterprise,77,8,negative,political,2015
+320,El Chapo,27,8,negative,personal,2015
+321,"Blase (Jeezy, Juicy J & Diddy Remix)",221,8,negative,political,2015
+322,Coke & Wet,158,8,positive,money,2006
+323,R.I.C.O. (Remix),222,8,negative,political,2015
+324,Loco,223,8,negative,political,2015
+325,Big Tyme,224,8,positive,money,2001
+326,Pussy,225,8,positive,money,2002
+327,Computers (Freestyle),78,8,neutral,hotel,2015
+328,Trap Problems,78,8,neutral,The Apprentice,2015
+329,Zion,226,8,neutral,,2015
+330,MONEY LIKE MY OG,227,8,positive,hotel,2012
+331,I Think I'm Swipa,228,8,positive,money,2013
+332,I Need Dollas,229,8,positive,money,2012
+333,Buku,230,8,positive,hotel,2015
+334,Gratitude,231,8,positive,hotel,2015
+335,Fired,232,8,neutral,The Apprentice,2015
+336,Wet Dollars,233,8,positive,hotel,2015
+337,Purpose,196,8,neutral,,2015
+338,Datpiff (freeverse series Ep. 4),14,8,neutral,,2016
+339,Driving Gloves,234,8,positive,money,2015
+340,Gucci Comin Home,235,8,neutral,,2016
+341,Pimps (Free Stylin at the Fortune 500 Club),103,8,positive,money,1994
+342,World War 6,236,8,neutral,political,2016
+343,Pop Style (Remix),237,8,neutral,personal,2016
+344,Slenderman,238,8,neutral,,2016
+345,Misconceptions 3,239,8,neutral,political,2016
+346,Lost a Fan,163,8,neutral,money,2016
+347,FLEM,240,8,negative,political,2016
+348,Living the Life,241,8,positive,money,2005
+349,Thought U Lost It,242,8,negative,political,2016
+350,I Need,243,8,negative,political,2016
+351,Bad Boy on Death Row,244,8,negative,,2016
+352,CIT4DT,245,8,negative,political,2016
+353,Hard (Freestyle),79,8,positive,hotel,2016
+354,High Seas (C+),246,8,positive,money,2013
+355,Priceless,247,8,positive,money,2014
+356,Billionaire,248,8,positive,money,2009
+357,Which Is Cool,249,8,positive,hotel,2016
+358,My Speech (Queen's Speech Remix),250,8,neutral,political,2016
+359,Pocket Full of Stones,251,8,positive,,1992
+360,Nobody Speak,252,8,negative,personal,2016
+361,Look Me in My Eyes,253,8,positive,hotel,2014
+362,Everything's a Go (Remix),222,8,positive,money,2012
+363,Wicked Freestyle,148,8,negative,,2016
+364,Castle,173,8,negative,,2016
+365,Cross 'Em Out and Put a 'K,254,8,positive,money,1996
+366,Muzzle Toe,255,8,positive,money,1999
+367,Red Drops,256,8,negative,money,2016
+368,No Smoke,257,8,negative,,2016
+369,Out Here,258,8,positive,hotel,2016
+370,Come Again,259,8,negative,political,2016
+371,Dope,229,8,negative,,2016
+372,Come Down (Remix),229,8,negative,political,2016
+373,Miss U,196,8,positive,money,2013
+374,On the Way,196,8,positive,money,2014
+375,Digest It,260,8,negative,political,2016
+376,Constantly Hating,196,8,positive,money,2015
+377,FDT (Fuck Donald Trump),261,8,negative,political,2016
+378,It's Goin' Down,262,8,positive,money,2006
