@@ -1,8 +1,14 @@
 import pandas as pd
+from sqlalchemy import create_engine
+import sqlite3
 from IPython.display import display
 
 
-# We population the raw data for players in the NBA or ABA with last name
+# We create the sqlite engine
+engine = create_engine('sqlite:///player_last_name_h.db', echo=False)
+
+
+# We populate the raw data for players in the NBA or ABA with last name
 # beginning with a H, as of June 29, 2022
 players_last_name_h = pd.read_excel('player_last_name_h.xls')
 
