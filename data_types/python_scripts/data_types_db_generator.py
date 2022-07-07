@@ -52,13 +52,6 @@ players_last_name_h.to_sql('players_last_name_h',\
     last_name_engine, if_exists='replace', index=False)
 
 
-# 
-#with open('players_last_name_h_nominal_interval_ratio.tex', 'w') as file:
-    #file.write(
-        #_.to_latex()
-        #)
-
-
 points_rankings_engine = create_engine\
     ('sqlite:///players_points_rankings_21_22.db', echo=False)
 
@@ -76,16 +69,16 @@ players_points_rankings_21_22.drop(columns=\
     'TRB', 'AST', 'STL', 'BLK', 'TOV', 'PF', 'Player-additional'], inplace=True)
 
 
+# We make sure the remaining columns are lower_case with no spaces
 new_columns = {x: x.lower().replace(' ', '_')\
     for x in players_points_rankings_21_22.columns}
 players_points_rankings_21_22.rename(columns=new_columns, inplace=True)
 
 
+# We need to change the 'pts▼' column to 'pts'
+players_points_rankings_21_22.rename(columns={'pts▼': 'pts'}, inplace=True)
+
+
 # We create a database with our cleaned data
 players_points_rankings_21_22.to_sql('players_points_rankings_21_22',\
     points_rankings_engine, if_exists='replace', index=False)
-
-
-# 
-#with open('players_points_rankings_21_22_nominal_ordinal_ratio.tex', 'w') as file:
-    #file.write(_.to_latex())
