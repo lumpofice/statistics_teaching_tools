@@ -273,7 +273,7 @@ N(p_avg, sqrt(p_avg*(1-p_avg)/m))"""
             flag = False
             continue
         except ValueError:
-            llogging.debug('Sample size must be a positive integer'\
+            logging.debug('Sample size must be a positive integer'\
                     ' of at most 1000.')
             continue
             

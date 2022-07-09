@@ -1,0 +1,6 @@
+game_id,game_date,age,opponent,outcome,started,field_goals,field_goal_attempts,field_goal_pct,three_points,three_point_attempts,three_point_pct,free_throw,free_throw_attempts,free_throw_pct,offense_rebound,defense_rebound,total_rebound,assists,steals,blocks,turnovers,personal_fouls,points,game_score,plus_minus,away_game
+1,2019-10-24 00:00:00.000000,31-224,LAC,L (-19),1,8,20,0.4,2,11,0.182,5,5,1.0,1,3,4,4,1,0,8,3,23,8.4,-19,0
+2,2019-10-27 00:00:00.000000,31-227,OKC,L (-28),1,7,18,0.389,2,9,0.222,7,7,1.0,2,6,8,5,0,0,2,0,23,17.9,-30,1
+3,2019-10-28 00:00:00.000000,31-228,NOP,W (+11),1,9,17,0.529,4,10,0.4,4,4,1.0,1,2,3,11,3,0,1,5,26,26.7,32,1
+4,2019-10-30 00:00:00.000000,31-230,PHO,L (-11),1,3,11,0.273,1,7,0.143,2,2,1.0,0,5,5,6,1,2,4,2,9,5.8,-13,0
+5,2020-03-05 00:00:00.000000,31-357,TOR,L (-8),1,6,16,0.375,3,12,0.25,8,8,1.0,0,6,6,7,0,0,1,1,23,19.5,-13,0

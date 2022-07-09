@@ -6,11 +6,11 @@ import sqlite3
 
 
 # Creating the engine for our tables
-engine = create_engine('sqlite:///steph_curry_stats.db', echo=False)
+engine = create_engine('sqlite:///steph_curry_game_stats.db', echo=False)
 
 
 # 2009-2010 statistics
-df_09 = pd.read_excel('steph_curry_game_stats/regular_season_09_10.xls')
+df_09 = pd.read_excel('raw_steph_curry_game_stats/regular_season_09_10.xls')
 
 # Cleaning 2009-2010 statistics
 df_09['Unnamed: 5'].fillna('none', inplace=True)
@@ -32,7 +32,7 @@ df_09.to_sql('season_09_10', engine, if_exists='replace', index=False)
 
 
 # 2010-2011 statistics
-df_10 = pd.read_excel('steph_curry_game_stats/regular_season_10_11.xls')
+df_10 = pd.read_excel('raw_steph_curry_game_stats/regular_season_10_11.xls')
 
 # Cleaning 2010-2011 statistics
 df_10['Unnamed: 5'].fillna('none', inplace=True)
@@ -54,7 +54,7 @@ df_10.to_sql('season_10_11', engine, if_exists='replace', index=False)
 
 
 # 2011-2012 statistics
-df_11 = pd.read_excel('steph_curry_game_stats/regular_season_11_12.xls')
+df_11 = pd.read_excel('raw_steph_curry_game_stats/regular_season_11_12.xls')
 
 # Cleaning 2011-2012 statistics
 df_11['Unnamed: 5'].fillna('none', inplace=True)
@@ -76,7 +76,7 @@ df_11.to_sql('season_11_12', engine, if_exists='replace', index=False)
 
 
 # 2012-2013 statistics
-df_12 = pd.read_excel('steph_curry_game_stats/regular_season_12_13.xls')
+df_12 = pd.read_excel('raw_steph_curry_game_stats/regular_season_12_13.xls')
 
 # Cleaning 2012-2013 statistics
 df_12['Unnamed: 5'].fillna('none', inplace=True)
@@ -98,7 +98,7 @@ df_12.to_sql('season_12_13', engine, if_exists='replace', index=False)
 
 
 # 2013-2014 statistics
-df_13 = pd.read_excel('steph_curry_game_stats/regular_season_13_14.xls')
+df_13 = pd.read_excel('raw_steph_curry_game_stats/regular_season_13_14.xls')
 
 # Cleaning 2013-2014 statistics
 df_13['Unnamed: 5'].fillna('none', inplace=True)
@@ -120,7 +120,7 @@ df_13.to_sql('season_13_14', engine, if_exists='replace', index=False)
 
 
 # 2014-2015 statistics
-df_14 = pd.read_excel('steph_curry_game_stats/regular_season_14_15.xls')
+df_14 = pd.read_excel('raw_steph_curry_game_stats/regular_season_14_15.xls')
 
 # Cleaning 2014-2015 statistics
 df_14['Unnamed: 5'].fillna('none', inplace=True)
@@ -142,7 +142,7 @@ df_14.to_sql('season_14_15', engine, if_exists='replace', index=False)
 
 
 # 2015-2016 statistics
-df_15 = pd.read_excel('steph_curry_game_stats/regular_season_15_16.xls')
+df_15 = pd.read_excel('raw_steph_curry_game_stats/regular_season_15_16.xls')
 
 # Cleaning 2015-2016 statistics
 df_15['Unnamed: 5'].fillna('none', inplace=True)
@@ -164,7 +164,7 @@ df_15.to_sql('season_15_16', engine, if_exists='replace', index=False)
 
 
 # 2016-2017 statistics
-df_16 = pd.read_excel('steph_curry_game_stats/regular_season_16_17.xls')
+df_16 = pd.read_excel('raw_steph_curry_game_stats/regular_season_16_17.xls')
 
 # Cleaning 2016-2017 statistics
 df_16['Unnamed: 5'].fillna('none', inplace=True)
@@ -186,7 +186,7 @@ df_16.to_sql('season_16_17', engine, if_exists='replace', index=False)
 
 
 # 2017-2018 statistics
-df_17 = pd.read_excel('steph_curry_game_stats/regular_season_17_18.xls')
+df_17 = pd.read_excel('raw_steph_curry_game_stats/regular_season_17_18.xls')
 
 # Cleaning 2017-2018 statistics
 df_17['Unnamed: 5'].fillna('none', inplace=True)
@@ -208,7 +208,7 @@ df_17.to_sql('season_17_18', engine, if_exists='replace', index=False)
 
 
 # 2018-2019 statistics
-df_18 = pd.read_excel('steph_curry_game_stats/regular_season_18_19.xls')
+df_18 = pd.read_excel('raw_steph_curry_game_stats/regular_season_18_19.xls')
 
 # Cleaning 2018-2019 statistics
 df_18['Unnamed: 5'].fillna('none', inplace=True)
@@ -230,7 +230,7 @@ df_18.to_sql('season_18_19', engine, if_exists='replace', index=False)
 
 
 # 2019-2020 statistics
-df_19 = pd.read_excel('steph_curry_game_stats/regular_season_19_20.xls')
+df_19 = pd.read_excel('raw_steph_curry_game_stats/regular_season_19_20.xls')
 
 # Cleaning 2019-2020 statistics
 df_19['Unnamed: 5'].fillna('none', inplace=True)
@@ -252,7 +252,7 @@ df_19.to_sql('season_19_20', engine, if_exists='replace', index=False)
 
 
 # 2020-2021 statistics
-df_20 = pd.read_excel('steph_curry_game_stats/regular_season_20_21.xls')
+df_20 = pd.read_excel('raw_steph_curry_game_stats/regular_season_20_21.xls')
 
 # Cleaning 2020-2021 statistics
 df_20['Unnamed: 5'].fillna('none', inplace=True)
@@ -274,7 +274,7 @@ df_20.to_sql('season_20_21', engine, if_exists='replace', index=False)
 
 
 # 2021-2022 statistics
-df_21 = pd.read_excel('steph_curry_game_stats/regular_season_21_22.xls')
+df_21 = pd.read_excel('raw_steph_curry_game_stats/regular_season_21_22.xls')
 
 # Cleaning 2021-2022 statistics
 df_21['Unnamed: 5'].fillna('none', inplace=True)

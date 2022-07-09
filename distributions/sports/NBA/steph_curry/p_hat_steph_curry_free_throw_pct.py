@@ -22,7 +22,7 @@ Free Throw Percentage (FT%) onto a histogram, then it pulls a number of samples,
 number and sample size determined by user input, from that population
 distribution, computing for each sample the proportion (p-hat) of those
 exhibiting a percentage greater than or equal to the mean of the population.
-Because we expect the Sample Distribution of p-hats to approximate a normal
+Because we expect the Sampling Distribution of p-hats to approximate a normal
 distribution, we overlay the Theoretical Normal Distribution, with those
 parameters of the Sampling Distribution of p-hats, within the same figure
 for a comparison."""
@@ -265,104 +265,86 @@ by the user."""
 # per game.
 
 
-# REGULAR SEASON 09 FT%
-sc_09 = pd.read_excel('steph_curry_game_stats/regular_season_09_10.xls')
-sc_09 = sc_09.loc[sc_09['FT%'].notnull()]
-sc_09.drop([66, 67], inplace=True)
+# Season 2009-2010
+df_09 = pd.read_csv('cleaned_steph_curry_game_stats/season_09_10.csv')
+sc_09 = df_09.loc[df_09['free_throw_pct'].notnull()]
 
 
-# REGULAR SEASON 10 FT%
-sc_10 = pd.read_excel('steph_curry_game_stats/regular_season_10_11.xls')
-sc_10 = sc_10.loc[sc_10['FT%'].notnull()]
-sc_10.drop([2, 3, 22, 23, 24, 25, 26, 27], inplace=True)
+# Season 2010-2011
+df_10 = pd.read_csv('cleaned_steph_curry_game_stats/season_10_11.csv')
+sc_10 = df_10.loc[df_10['free_throw_pct'].notnull()]
 
 
-# REGULAR SEASON 11 FT%
-sc_11 = pd.read_excel('steph_curry_game_stats/regular_season_11_12.xls')
-sc_11 = sc_11.loc[sc_11['FT%'].notnull()]
-sc_11.drop([2, 6, 7, 8, 9, 10, 11, 12, 13], inplace=True)
-sc_11 = sc_11.loc[:29]
+# Season 2011-2012
+df_11 = pd.read_csv('cleaned_steph_curry_game_stats/season_11_12.csv')
+sc_11 = df_11.loc[df_11['free_throw_pct'].notnull()]
 
 
-# REGULAR SEASON 12 FT%
-sc_12 = pd.read_excel('steph_curry_game_stats/regular_season_12_13.xls')
-sc_12 = sc_12.loc[sc_12['FT%'].notnull()]
-sc_12.drop([36, 37, 44, 45], inplace=True)
+# Season 2012-2013
+df_12 = pd.read_csv('cleaned_steph_curry_game_stats/season_12_13.csv')
+sc_12 = df_12.loc[df_12['free_throw_pct'].notnull()]
 
 
-# REGULAR SEASON 13 FT%
-sc_13 = pd.read_excel('steph_curry_game_stats/regular_season_13_14.xls')
-sc_13 = sc_13.loc[sc_13['FT%'].notnull()]
-sc_13.drop([5, 11, 12, 81], inplace=True)
+# Season 2013-2014
+df_13 = pd.read_csv('cleaned_steph_curry_game_stats/season_13_14.csv')
+sc_13 = df_13.loc[df_13['free_throw_pct'].notnull()]
 
 
-# REGULAR SEASON 14 FT%
-sc_14 = pd.read_excel('steph_curry_game_stats/regular_season_14_15.xls')
-sc_14 = sc_14.loc[sc_14['FT%'].notnull()]
-sc_14.drop([52, 63], inplace=True)
+# Season 2014-2015
+df_14 = pd.read_csv('cleaned_steph_curry_game_stats/season_14_15.csv')
+sc_14 = df_14.loc[df_14['free_throw_pct'].notnull()]
 
 
-# REGULAR SEASON 15 FT%
-sc_15 = pd.read_excel('steph_curry_game_stats/regular_season_15_16.xls')
-sc_15 = sc_15.loc[sc_15['FT%'].notnull()]
-sc_15.drop([30, 31, 58], inplace=True)
+# Season 2015-2016
+df_15 = pd.read_csv('cleaned_steph_curry_game_stats/season_15_16.csv')
+sc_15 = df_15.loc[df_15['free_throw_pct'].notnull()]
 
 
-# REGULAR SEASON 16 FT%
-sc_16 = pd.read_excel('steph_curry_game_stats/regular_season_16_17.xls')
-sc_16 = sc_16.loc[sc_16['FT%'].notnull()]
-sc_16.drop([47, 65, 79], inplace=True)
+# Season 2016-2017
+df_16 = pd.read_csv('cleaned_steph_curry_game_stats/season_16_17.csv')
+sc_16 = df_16.loc[df_16['free_throw_pct'].notnull()]
 
 
-# REGULAR SEASON 17 FT%
-sc_17 = pd.read_excel('steph_curry_game_stats/regular_season_17_18.xls')
-sc_17 = sc_17.loc[sc_17['FT%'].notnull()]
-sc_17.drop([13, 20, 41, 42], inplace=True)
-sc_17 = pd.concat([sc_17.loc[:24], sc_17.loc[36:64], sc_17.loc[71:71]], axis=0)
+# Season 2017-2018
+df_17 = pd.read_csv('cleaned_steph_curry_game_stats/season_17_18.csv')
+sc_17 = df_17.loc[df_17['free_throw_pct'].notnull()]
 
 
-# REGULAR SEASON 18 FT%
-sc_18 = pd.read_excel('steph_curry_game_stats/regular_season_18_19.xls')
-sc_18 = sc_18.loc[sc_18['FT%'].notnull()]
-sc_18.drop([71, 81], inplace=True)
-sc_18 = pd.concat([sc_18.loc[:10], sc_18.loc[23:]], axis=0)
+# Season 2018-2019
+df_18 = pd.read_csv('cleaned_steph_curry_game_stats/season_18_19.csv')
+sc_18 = df_18.loc[df_18['free_throw_pct'].notnull()]
 
 
-# REGULAR SEASON 19 FT%
-sc_19 = pd.read_excel('steph_curry_game_stats/regular_season_19_20.xls')
-sc_19 = sc_19.loc[sc_19['FT%'].notnull()]
-sc_19 = pd.concat([sc_19.loc[:3], sc_19.loc[62:62]], axis=0)
+# Season 2019-2020
+df_19 = pd.read_csv('cleaned_steph_curry_game_stats/season_19_20.csv')
+sc_19 = df_19.loc[df_19['free_throw_pct'].notnull()]
 
 
-# REGULAR SEASON 20 FT%
-sc_20 = pd.read_excel('steph_curry_game_stats/regular_season_20_21.xls')
-sc_20 = sc_20.loc[sc_20['FT%'].notnull()]
-sc_20.drop([30, 36, 41, 42, 43, 44, 45, 48, 70], inplace=True)
+# Season 2020-2021
+df_20 = pd.read_csv('cleaned_steph_curry_game_stats/season_20_21.csv')
+sc_20 = df_20.loc[df_20['free_throw_pct'].notnull()]
 
 
-# REGULAR SEASON 21 FT%
-sc_21 = pd.read_excel('steph_curry_game_stats/regular_season_21_22.xls')
-sc_21 = sc_21.loc[sc_21['FT%'].notnull()]
-sc_21.drop([15, 29, 37, 42, 51, 64], inplace=True)
-sc_21 = sc_18.loc[:68]
+# Season 2021-2022
+df_21 = pd.read_csv('cleaned_steph_curry_game_stats/season_21_22.csv')
+sc_21 = df_21.loc[df_21['free_throw_pct'].notnull()]
 
 
-# REGULAR SEASON CAREER FT%
 sc_career = pd.concat(
     [
-        sc_09['FT%'],
-        sc_10['FT%'],
-        sc_11['FT%'],
-        sc_12['FT%'],
-        sc_13['FT%'],
-        sc_14['FT%'],
-        sc_15['FT%'],
-        sc_16['FT%'],
-        sc_17['FT%'],
-        sc_18['FT%'],
-        sc_19['FT%'],
-        sc_20['FT%'],
-        sc_21['FT%']
+        sc_09['free_throw_pct'],
+        sc_10['free_throw_pct'],
+        sc_11['free_throw_pct'],
+        sc_12['free_throw_pct'],
+        sc_13['free_throw_pct'],
+        sc_14['free_throw_pct'],
+        sc_15['free_throw_pct'],
+        sc_16['free_throw_pct'],
+        sc_17['free_throw_pct'],
+        sc_18['free_throw_pct'],
+        sc_19['free_throw_pct'],
+        sc_20['free_throw_pct'],
+        sc_21['free_throw_pct']
     ]
 )
 
@@ -371,4 +353,3 @@ p_hat_distribution(sc_career)
 
 
 free_throw_avg_behavior()
-
