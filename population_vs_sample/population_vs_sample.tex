@@ -27,3 +27,46 @@ Another sample of $G$ could be the set of ages for all chemistry teachers who wo
 \end{align*}
 \end{example}
 
+\begin{definition}
+A parameter is some quantity associated with a population. A parameter contains information about a population.
+\end{definition}
+
+\begin{definition}
+A statistic is some quantity associated with a sample. A statistic contains information about a sample. One of the larger goals of an introductory course in statistics is to use, under a set of conditions, a statistic to make inferences about the greater population.  
+\end{definition}
+
+\begin{example}
+The mean age of all faculty members at school A is a parameter for the population:
+\begin{align*}
+    G = \{x_{i}: x_{i} \hspace{4pt} \text{is the age for teacher} \hspace{4pt} i \hspace{4pt} \text{who works at school A}\}
+\end{align*}
+The median age of all science teachers at school A is a statistic for the sample $S$ of $G$:
+\begin{align*}
+    S = \{x_{i}: x_{i} \hspace{4pt} \text{is the age for science teacher} \hspace{4pt} i \hspace{4pt} \text{who works at school A}\}
+\end{align*}
+\end{example}
+
+\begin{exercise}
+A hospital contains $223$ patients. The hospital lab contains a pint of blood from $73\%$ of these patients. Let
+\begin{align*}
+    B = \{x_{i}: x_{i} \hspace{4pt} \text{is a pint of blood for patient} \hspace{4pt} i\}
+\end{align*}
+be the set of these pints of blood. Is $B$ a sample or a population? If sample, then describe the population.
+\end{exercise}
+
+\begin{exercise}
+\resizebox{30em}{30em}{%
+\begin{tikzpicture}[scale=\textwidth/4.2cm]
+    % population
+    \draw (0, 0) -- (2, 0);
+    \draw (0, 0) -- (0, 1);
+    \draw (0, 1) -- (2, 1);
+    \draw (2, 1) -- (2, 0);
+    % sample
+    \draw (0.2, 0.2) -- (1.8, 0.2);
+    \draw (0.2, 0.2) -- (0.2, 0.8);
+    \draw (0.2, 0.8) -- (1.8, 0.8);
+    \draw (1.8, 0.8) -- (1.8, 0.2);
+\end{tikzpicture}
+}
+\end{exercise}

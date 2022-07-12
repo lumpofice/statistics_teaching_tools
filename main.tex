@@ -1,15 +1,24 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
+
+% Standard math packages
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{amssymb}
-\usepackage{geometry}
-\usepackage{amsfonts} 
+\usepackage{amsfonts}
 
+% Packages for images
+\usepackage{tikz}
+
+% Package for the layout
+\usepackage{geometry}
+
+% Title Page
 \title{Introductory Statistics}
 \author{Jonathan Parker}
 \date{Last Updated on \today}
 
+% Counters
 \renewcommand*\contentsname{Table of Contents}
 
 \newtheorem{theorem}{Theorem}[section]
@@ -33,7 +42,8 @@
 \newcounter{dataset}[section]
 \newenvironment{dataset}[1][]{\refstepcounter{dataset}\par\medskip
    \noindent \textbf{Data Set~\thedataset. #1} \rmfamily}{\medskip}
-   
+
+% Removing indentations
 \setlength{\parindent}{0pt}
 
 \begin{document}
@@ -47,6 +57,9 @@
 
 \newpage
 \input{data_types/data_types}
+
+\newpage
+\input{bibliography}
 
 
 \end{document}
