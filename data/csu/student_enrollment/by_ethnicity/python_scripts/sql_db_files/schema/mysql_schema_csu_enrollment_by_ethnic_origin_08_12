@@ -1,0 +1,121 @@
+CREATE SCHEMA csu_enrollment_by_ethnic_origin_08_12
+DEFAULT CHARACTER SET utf8mb4;
+
+
+
+USE csu_enrollment_by_ethnic_origin_08_12;
+
+
+
+
+CREATE TABLE `ethnic_origin` (
+	`ethnic_origin_id`	INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	`ethnic_origin_name`	TEXT
+);
+
+
+
+
+
+INSERT INTO `ethnic_origin` VALUES (1,'international_students');
+INSERT INTO `ethnic_origin` VALUES (2,'asian');
+INSERT INTO `ethnic_origin` VALUES (3,'african_american');
+INSERT INTO `ethnic_origin` VALUES (4,'hispanic');
+INSERT INTO `ethnic_origin` VALUES (5,'american_indian');
+INSERT INTO `ethnic_origin` VALUES (6,'multi_racial');
+INSERT INTO `ethnic_origin` VALUES (7,'white');
+INSERT INTO `ethnic_origin` VALUES (8,'native_hawaiian_or_pacific_islander');
+INSERT INTO `ethnic_origin` VALUES (9,'race_and_ethnicity_unknown');
+INSERT INTO `ethnic_origin` VALUES (10,'total');
+
+
+
+
+
+CREATE TABLE `undergraduate` (
+	`ethnic_origin_id`	INTEGER NOT NULL,
+	`fall_2008`	INTEGER,
+	`fall_2009`	INTEGER,
+	`fall_2010`	INTEGER,
+	`fall_2011`	INTEGER,
+	`fall_2012`	INTEGER,
+	FOREIGN KEY(`ethnic_origin_id`) REFERENCES `ethnic_origin`(`ethnic_origin_id`)
+);
+
+
+
+
+CREATE TABLE IF NOT EXISTS `graduate` (
+	`ethnic_origin_id`	INTEGER NOT NULL,
+	`fall_2008`	INTEGER,
+	`fall_2009`	INTEGER,
+	`fall_2010`	INTEGER,
+	`fall_2011`	INTEGER,
+	`fall_2012`	INTEGER,
+	FOREIGN KEY(`ethnic_origin_id`) REFERENCES `ethnic_origin`(`ethnic_origin_id`)
+);
+
+
+
+
+CREATE TABLE `combined` (
+	`ethnic_origin_id`	INTEGER NOT NULL,
+	`fall_2008`	INTEGER,
+	`fall_2009`	INTEGER,
+	`fall_2010`	INTEGER,
+	`fall_2011`	INTEGER,
+	`fall_2012`	INTEGER,
+	FOREIGN KEY(`ethnic_origin_id`) REFERENCES `ethnic_origin`(`ethnic_origin_id`)
+);
+
+
+
+
+set foreign_key_checks=0;
+
+
+
+
+INSERT INTO `undergraduate` VALUES (1,66,81,68,60,67);
+INSERT INTO `undergraduate` VALUES (2,135,120,136,129,140);
+INSERT INTO `undergraduate` VALUES (3,2230,2310,2460,2541,2496);
+INSERT INTO `undergraduate` VALUES (4,259,319,301,334,345);
+INSERT INTO `undergraduate` VALUES (5,25,44,47,40,38);
+INSERT INTO `undergraduate` VALUES (6,281,200,157,156,176);
+INSERT INTO `undergraduate` VALUES (7,3842,3859,3869,3753,3741);
+INSERT INTO `undergraduate` VALUES (8,NULL,33,31,24,22);
+INSERT INTO `undergraduate` VALUES (9,0,3,0,0,0);
+INSERT INTO `undergraduate` VALUES (10,6838,6969,7069,7037,7025);
+
+
+
+
+INSERT INTO `graduate` VALUES (1,14,18,24,42,47);
+INSERT INTO `graduate` VALUES (2,21,16,19,22,22);
+INSERT INTO `graduate` VALUES (3,275,296,319,377,354);
+INSERT INTO `graduate` VALUES (4,18,30,28,27,29);
+INSERT INTO `graduate` VALUES (5,3,9,8,2,2);
+INSERT INTO `graduate` VALUES (6,15,16,16,18,16);
+INSERT INTO `graduate` VALUES (7,769,820,813,781,744);
+INSERT INTO `graduate` VALUES (8,NULL,3,2,1,0);
+INSERT INTO `graduate` VALUES (9,0,2,0,0,0);
+INSERT INTO `graduate` VALUES (10,1115,1210,1229,1270,1214);
+
+
+
+
+INSERT INTO `combined` VALUES (1,80,99,92,102,114);
+INSERT INTO `combined` VALUES (2,156,136,155,151,162);
+INSERT INTO `combined` VALUES (3,2505,2606,2779,2918,2850);
+INSERT INTO `combined` VALUES (4,277,349,329,361,374);
+INSERT INTO `combined` VALUES (5,28,53,55,42,40);
+INSERT INTO `combined` VALUES (6,296,216,173,174,192);
+INSERT INTO `combined` VALUES (7,4611,4679,4682,4534,4485);
+INSERT INTO `combined` VALUES (8,NULL,36,33,25,22);
+INSERT INTO `combined` VALUES (9,0,5,0,0,0);
+INSERT INTO `combined` VALUES (10,7953,8179,8298,8307,8239);
+
+
+
+
+set foreign_key_checks=1;
