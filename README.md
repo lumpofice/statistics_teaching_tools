@@ -69,3 +69,66 @@ Following is a breakdown of the different directories and their contents. Releva
                 11. season_19_20.csv
                 12. season_20_21.csv
                 13. season_21_22.csv
+                
+<b> probability </b>
+1. python_scripts
+    1. hiphopcandidates
+        1. hiphopcandidates.csv
+        2. hiphopcandidates.py
+        3. hiphopcandidates_probability.py
+        4. sql_db_files
+            1. hiphopcandidates.db
+            2. sqlite_on_hiphopcandidates.sql
+            3. schema
+                1. artists.csv
+                2. candidates.csv
+                3. songentries.csv
+                4. mysql_schema
+                
+<b> populaton_vs_sample </b>
+1. population_vs_sample.tex
+
+<b> data_types </b>
+1. data_types.tex
+2. python_scripts
+    1. data_types_db_generator.py
+    2. players_last_name_h.py
+    3. players_last_name_h.xls
+    4. players_points_rankings_21_22.py
+    5. players_points_rankings_21_22.xls
+    6. sql_db_file
+        1. players_last_name_h.db
+        2. players_points_rankings_21_22.db
+        3. sqlite_on_players_last_name_g.sql
+        4. sqlite_on_players_points_rankings_21_22.sql
+        5. schema
+            1. colleges.csv
+            2. mysql_schema_players_last_name_h
+            3. mysql_schema_players_points_rankings_21_22.sql
+            4. players_last_name_h.csv
+            5. players_points_rankings_21_22.csv
+            6. positions.csv
+3. python_generated_tables
+    1. players_last_name_h_nominal.tex
+    2. players_last_name_h_nominal_interval_ratio.tex
+    3. players_points_rankings_21_22_ordinal_nominal_ratio.tex
+
+<b> data </b>
+1. csu
+    1. students_enrollment
+        1. by_ethnicity
+            1. python_scripts
+                1. csu_enrollment_by_ethnic_origin_03_07.py
+                2. csu_enrollment_by_ethnic_origin_08_12.py
+                3. sql_db_files
+                    1. csu_enrollment_by_ethnic_origin_03_07.db
+                    2. csu_enrollment_by_ethnic_origin_03_07.sql
+                    3. csu_enrollment_by_ethnic_origin_08_12.db
+                    4. csu_enrollment_by_ethnic_origin_08_12.sql
+                    5. schema
+                        1. mysql_schema_csu_enrollment_by_ethnic_origin_03_07
+                        2. mysql_schema_csu_enrollment_by_ethnic_origin_08_12
+            2. csu_enrollment_by_ethnic_origin_03_07.pdf
+            3. csu_enrollment_by_ethnic_origin_08_12.pdf
+            4. csu_enrollment_by_ethnic_origin_13_17.pdf
+            5. csu_enrollment_by_ethnic_origin_17_21.pdf
