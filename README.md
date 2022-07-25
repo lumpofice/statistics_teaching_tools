@@ -120,14 +120,22 @@ Following is a breakdown of the different directories and their contents. Releva
             1. python_scripts
                 1. csu_enrollment_by_ethnic_origin_03_07.py
                 2. csu_enrollment_by_ethnic_origin_08_12.py
-                3. sql_db_files
+                3. csu_enrollment_by_ethnic_origin_13_17.py
+                4. csu_enrollment_by_ethnic_origin_17_21.py
+                5. sql_db_files
                     1. csu_enrollment_by_ethnic_origin_03_07.db
                     2. csu_enrollment_by_ethnic_origin_03_07.sql
                     3. csu_enrollment_by_ethnic_origin_08_12.db
                     4. csu_enrollment_by_ethnic_origin_08_12.sql
-                    5. schema
+                    5. csu_enrollment_by_ethnic_origin_13_17.db
+                    6. csu_enrollment_by_ethnic_origin_13_17.sql
+                    7. csu_enrollment_by_ethnic_origin_17_21.db
+                    8. csu_enrollment_by_ethnic_origin_17_21.sql
+                    9. schema
                         1. mysql_schema_csu_enrollment_by_ethnic_origin_03_07
                         2. mysql_schema_csu_enrollment_by_ethnic_origin_08_12
+                        3. mysql_schema_csu_enrollment_by_ethnic_origin_13_17
+                        4. mysql_schema_csu_enrollment_by_ethnic_origin_17_21
             2. csu_enrollment_by_ethnic_origin_03_07.pdf
             3. csu_enrollment_by_ethnic_origin_08_12.pdf
             4. csu_enrollment_by_ethnic_origin_13_17.pdf
